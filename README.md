@@ -1,97 +1,124 @@
-# packageName
+# `@develit-io/general-codes`
 
-<!-- automd:badges color=yellow -->
+📦 **`@develit-io/general-codes`** is a utility package that provides standardized codes for **countries**, **currencies**, **languages**, and **exchange rate providers**. It serves as a central repository for handling common reference data in applications.
 
-[![npm version](https://img.shields.io/npm/v/packageName?color=yellow)](https://npmjs.com/package/packageName)
-[![npm downloads](https://img.shields.io/npm/dm/packageName?color=yellow)](https://npm.chart.dev/packageName)
-
-<!-- /automd -->
-
-This is my package description.
-
-## Usage
-
-Install package:
-
-<!-- automd:pm-install -->
+## 📥 Installation
 
 ```sh
-# ✨ Auto-detect
-npx nypm install packageName
-
-# npm
-npm install packageName
-
-# yarn
-yarn add packageName
-
-# pnpm
-pnpm install packageName
-
-# bun
-bun install packageName
-
-# deno
-deno install packageName
+pnpm add @develit-io/general-codes
 ```
 
-<!-- /automd -->
+## 🚀 Features
 
-Import:
+- 🌍 **Countries** – Standardized country codes and names.
+- 💱 **Currencies** – Includes fiat and crypto currencies with provider mapping.
+- 🗣 **Languages** – Language codes and names.
+- 🔗 **Currency Providers** – Defines supported exchange rate providers with configurable API endpoints.
 
-<!-- automd:jsimport cjs cdn name="pkg" -->
+## 📚 Usage
 
-**ESM** (Node.js, Bun, Deno)
+### Importing Data
 
-```js
-import {} from "pkg";
+```ts
+import { CODES, COUNTRIES, CURRENCIES, LANGUAGES, PROVIDERS } from "@develit-io/general-codes";
+
+console.log(COUNTRIES); // List of country codes
+console.log(CURRENCIES); // List of fiat and crypto currencies
+console.log(LANGUAGES); // Language codes
+console.log(PROVIDERS); // Exchange rate providers
+
+// Importing types
+const country: CODES.Country = {...};
+const currency: CODES.Currency = {...};
 ```
 
-**CommonJS** (Legacy Node.js)
+## 🔹 Data Structure
 
-```js
-const {} = require("pkg");
+### 🌍 Countries (`COUNTRIES`)
+
+Each country entry follows this structure:
+
+```ts
+type Country = {
+  code2: string;
+  code3: string;
+  currency: string;
+  phoneCode: string;
+  name: string;
+  native: string;
+  vat: number;
+  priority?: number;
+  translatedName?: string;
+};
 ```
 
-**CDN** (Deno, Bun and Browsers)
+### 💱 Currencies (`CURRENCIES`)
 
-```js
-import {} from "https://esm.sh/pkg";
+Currencies include fiat and crypto, each having a type and supported providers.
+
+```ts
+type Currency = {
+  code: string;
+  symbol: string;
+  symbolBefore: boolean;
+  name: string;
+  providers: CurrencyProvider[]
+};
 ```
 
-<!-- /automd -->
+### 🗣 Languages (`LANGUAGES`)
 
-## Development
+Languages are stored as ISO codes with names.
 
-<details>
+```ts
+type Language = {
+  code: string;
+  name: string;
+  native: string;
+  cs: string;
+};
+```
 
-<summary>local development</summary>
+### 🔗 Currency Providers (`PROVIDERS`)
 
-- Clone this repository
-- Install latest LTS version of [Node.js](https://nodejs.org/en/)
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
-- Install dependencies using `pnpm install`
-- Run interactive tests using `pnpm dev`
+Defines API providers for currency exchange rates, with endpoint templates.
 
-</details>
+```ts
+type CurrencyProviderId = 'currencyLayer' | 'currencyCloud' | 'CNB' | 'kraken' | 'binance';
 
-## License
+type CurrencyProvider = {
+  id: CurrencyProviderId;
+  url: string;
+};
+```
 
-<!-- automd:contributors license=MIT -->
+Example provider definitions:
 
-Published under the [MIT](https://github.com/unjs/packageName/blob/main/LICENSE) license.
-Made by [community](https://github.com/unjs/packageName/graphs/contributors) 💛
-<br><br>
-<a href="https://github.com/unjs/packageName/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=unjs/packageName" />
-</a>
+```ts
+const PROVIDERS: Record<CurrencyProviderId, CurrencyProvider> = {
+  currencyLayer: { id: "currencyLayer", url: "https://api.currencylayer.com/live?access_key=YOUR_ACCESS_KEY&currencies={target}&source={base}" },
+  currencyCloud: { id: "currencyCloud", url: "https://api.currencycloud.com/v2/rates/detailed?buy_currency={target}&sell_currency={base}" },
+  kraken: { id: "kraken", url: "https://api.kraken.com/0/public/Ticker?pair={base}{target}" },
+  binance: { id: "binance", url: "https://api.binance.com/api/v3/ticker/price?symbol={base}{target}" },
+  CNB: { id: "CNB", url: "https://api.cnb.cz/exchange-rate?base={base}&target={target}" }
+};
+```
 
-<!-- /automd -->
+## 🛠 Development
 
-<!-- automd:with-automd -->
+To contribute or modify, install dependencies and build:
 
----
+```sh
+pnpm install
+pnpm build
+```
 
-_🤖 auto updated with [automd](https://automd.unjs.io)_
+Run tests:
 
-<!-- /automd -->
+```sh
+pnpm test
+```
+
+## 📄 License
+
+MIT License © [develit.io](https://develit.io)
