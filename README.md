@@ -20,12 +20,12 @@ pnpm add @develit-io/general-codes
 ### Importing Data
 
 ```ts
-import { CODES, COUNTRIES, CURRENCIES, LANGUAGES, PROVIDERS } from "@develit-io/general-codes";
+import { CODES, COUNTRIES, CURRENCIES, LANGUAGES, CURRENCY_PROVIDERS } from "@develit-io/general-codes";
 
 console.log(COUNTRIES); // List of country codes
 console.log(CURRENCIES); // List of fiat and crypto currencies
 console.log(LANGUAGES); // Language codes
-console.log(PROVIDERS); // Exchange rate providers
+console.log(CURRENCY_PROVIDERS); // Exchange rate providers
 
 // Importing types
 const country: CODES.Country = {...};
@@ -79,7 +79,7 @@ type Language = {
 };
 ```
 
-### 🔗 Currency Providers (`PROVIDERS`)
+### 🔗 Currency Providers (`CURRENCY_PROVIDERS`)
 
 Defines API providers for currency exchange rates, with endpoint templates.
 
@@ -95,7 +95,7 @@ type CurrencyProvider = {
 Example provider definitions:
 
 ```ts
-const PROVIDERS: Record<CurrencyProviderId, CurrencyProvider> = {
+const CURRENCY_PROVIDERS: Record<CurrencyProviderId, CurrencyProvider> = {
   currencyLayer: { id: "currencyLayer", url: "https://api.currencylayer.com/live?access_key=YOUR_ACCESS_KEY&currencies={target}&source={base}" },
   currencyCloud: { id: "currencyCloud", url: "https://api.currencycloud.com/v2/rates/detailed?buy_currency={target}&sell_currency={base}" },
   kraken: { id: "kraken", url: "https://api.kraken.com/0/public/Ticker?pair={base}{target}" },
