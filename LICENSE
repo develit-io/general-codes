@@ -1,21 +1,32 @@
-MIT License
+# Develit.io Open Source License
 
-Copyright (c)
+## Podmínky použití
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Tato licence (dále jen "Licence") se vztahuje na veškerý kód a související materiály (dále jen "Software") poskytnuté firmou Develit.io s.r.o. (dále jen "Poskytovatel").
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### 1. Udělení licence
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Poskytovatel tímto uděluje uživatelům (dále jen "Uživatel") nevýhradní, celosvětovou, bezplatnou licenci k používání, kopírování, modifikaci a distribuci Software, za předpokladu, že:
+
+-  Uživatel nesmí Software používat pro komerční účely, ani jej distribuovat třetím stranám bez předchozího písemného souhlasu Poskytovatele.
+-  Uživatel je povinen požádat o tento souhlas a Poskytovatel si vyhrazuje právo souhlas udělit či odmítnout dle vlastního uvážení.
+
+### 2. Odpovědnost
+
+Software je poskytován "tak, jak je", bez jakýchkoliv záruk, výslovných či implicitních, včetně, ale nikoli výlučně, záruk obchodovatelnosti a vhodnosti pro konkrétní účel. Poskytovatel nenese odpovědnost za žádné škody vyplývající z použití Software.
+
+### 3. Změny licence
+
+Poskytovatel si vyhrazuje právo tuto licenci kdykoliv změnit. Změny budou zveřejněny na stránkách Poskytovatele a vstoupí v platnost okamžitě po zveřejnění.
+
+### 4. Právo a jurisdikce
+
+Tato Licence se řídí právním řádem České republiky. Jakékoliv spory vyplývající z této Licence budou řešeny příslušnými soudy v České republice.
+
+## Kontaktní informace
+
+Pokud máte jakékoliv dotazy ohledně této Licence, kontaktujte nás na:
+
+**Develit.io s.r.o.**  
+Kurzova 2222/16  
+info@develit.io
