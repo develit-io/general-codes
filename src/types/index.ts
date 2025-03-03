@@ -22,4 +22,12 @@ export type Currency = {
   symbol: string
   symbolBefore: boolean
   name: string
+  providers: CurrencyProviderId[]
+}
+
+export type CurrencyProviderId = 'currencyLayer' | 'currencyCloud' | 'CNB' | 'kraken' | 'binance'
+
+export type CurrencyProvider = {
+  id: CurrencyProviderId
+  url: string
 }
