@@ -30,7 +30,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepack": "pnpm build",
-    "release": "pnpm test && npx changelogen@latest --release && npm publish --access public && git push --follow-tags",
+    "release": "pnpm test && npx changelogen@latest --release --push && npm publish --access public",
     "test": "pnpm lint && pnpm test:types && vitest run --coverage",
     "test:types": "tsc --noEmit --skipLibCheck"
   },
