@@ -11,11 +11,11 @@ export type Country = {
 }
 
 export type Language = {
-  code: string;
-  name: string,
-  native: string;
-  cs: string;
-};
+  code: string
+  name: string
+  native: string
+  cs: string
+}
 
 export type Currency = {
   code: string
@@ -23,4 +23,3 @@ export type Currency = {
   symbolBefore: boolean
   name: string
 }
-
