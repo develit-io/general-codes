@@ -121,4 +121,4 @@ pnpm test
 
 ## 📄 License
 
-MIT License © [develit.io](https://develit.io)
+[Open Source © Develit.io](./LICENSE.md) - Made with 💚

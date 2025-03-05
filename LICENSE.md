@@ -29,4 +29,5 @@ Pokud máte jakékoliv dotazy ohledně této Licence, kontaktujte nás na:
 
 **Develit.io s.r.o.**  
 Kurzova 2222/16  
+155 00 Praha 5  
 info@develit.io
