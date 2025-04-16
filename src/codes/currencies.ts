@@ -1,6 +1,6 @@
 import type { Currency } from '../types'
 
-const currencies: Currency[] = [
+const currencies = [
   // 🔹 FIAT Currencies
   { code: 'CZK', symbol: 'Kč', symbolBefore: false, name: 'Czech Koruna', providers: ['CNB', 'currencyLayer', 'currencyCloud'] },
   { code: 'EUR', symbol: '€', symbolBefore: false, name: 'Euro', providers: ['currencyLayer', 'currencyCloud'] },
@@ -57,6 +57,8 @@ const currencies: Currency[] = [
   { code: 'DOGE', symbol: 'Ð', symbolBefore: true, name: 'Dogecoin', providers: ['kraken', 'binance'] },
   { code: 'MATIC', symbol: 'M', symbolBefore: true, name: 'Polygon', providers: ['kraken', 'binance'] },
   { code: 'AVAX', symbol: '⛰', symbolBefore: true, name: 'Avalanche', providers: ['kraken', 'binance'] },
-]
+] as const satisfies readonly Currency[]
 
 export default currencies
+
+export type CurrencyCode = typeof currencies[number]['code']

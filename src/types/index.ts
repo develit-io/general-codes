@@ -22,12 +22,15 @@ export type Currency = {
   symbol: string
   symbolBefore: boolean
   name: string
-  providers: CurrencyProviderId[]
+  providers: string[]
 }
-
-export type CurrencyProviderId = 'currencyLayer' | 'currencyCloud' | 'CNB' | 'kraken' | 'binance'
 
 export type CurrencyProvider = {
-  id: CurrencyProviderId
+  id: string
   url: string
 }
+
+export type { CurrencyCode } from '../codes/currencies'
+export type { CurrencyProviderId } from '../codes/currency-providers'
+export type { CountryCode2, CountryCode3, CountryCurrency, CountryPhoneCode, CountryVat } from '../codes/countries'
+export type { LanguageCode } from '../codes/languages'

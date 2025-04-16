@@ -1,6 +1,6 @@
 import type { Language } from '../types'
 
-const languages: Language[] = [
+const languages = [
   { code: 'en', name: 'English', native: 'English', cs: 'Angličtina' },
   { code: 'de', name: 'German', native: 'Deutsch', cs: 'Němčina' },
   { code: 'cs', name: 'Czech', native: 'Čeština', cs: 'Čeština' },
@@ -49,6 +49,8 @@ const languages: Language[] = [
   { code: 'zh', name: 'Chinese', native: '中文', cs: 'Čínština' },
   { code: 'af', name: 'Afrikaans', native: 'Afrikaans', cs: 'Afrikánština' },
   { code: 'hy', name: 'Armenian', native: 'Հայերեն', cs: 'Arménština' },
-]
+] as const satisfies readonly Language[]
 
 export default languages
+
+export type LanguageCode = typeof languages[number]['code']

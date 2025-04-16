@@ -1,6 +1,6 @@
 import type { Country } from '../types'
 
-const countries: Country[] = [
+const countries = [
   {
     code2: 'AF',
     code3: 'AFG',
@@ -1895,6 +1895,12 @@ const countries: Country[] = [
     native: 'Zimbabwe',
     vat: 14.5,
   },
-]
+] as const satisfies readonly Country[]
 
 export default countries
+
+export type CountryCode2 = typeof countries[number]['code2']
+export type CountryCode3 = typeof countries[number]['code3']
+export type CountryCurrency = typeof countries[number]['currency']
+export type CountryPhoneCode = typeof countries[number]['phoneCode']
+export type CountryVat = typeof countries[number]['vat']
