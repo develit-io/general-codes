@@ -1,6 +1,34 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://undefined/undefined/compare/v1.2.0...v1.3.0)
+
+### 🚀 Enhancements
+
+- **types:** Export enum types (c9d4b33)
+
+### 💅 Refactors
+
+- **providers:** Unify variable names (4b38886)
+
+### 🏡 Chore
+
+- Update readme (cbd2a8c)
+- Update LICENSE (d6b49a7)
+- Update LICENSE (756f67c)
+- Update README, LICENSE (2562fcb)
+
+### 🤖 CI
+
+- Fix corepack (e1f065e)
+- Fix corepack (f507154)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.2.0
 
 [compare changes](https://undefined/undefined/compare/v1.1.0...v1.2.0)
