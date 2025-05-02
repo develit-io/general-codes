@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.1
+
+[compare changes](https://undefined/undefined/compare/v1.3.0...v1.3.1)
+
+### 🩹 Fixes
+
+- Cnb provider url (6375d1b)
+
+### ❤️ Contributors
+
+- Danielkrul97 <info@danielkrul.com>
+
 ## v1.3.0
 
 [compare changes](https://undefined/undefined/compare/v1.2.0...v1.3.0)
