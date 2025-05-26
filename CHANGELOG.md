@@ -1,6 +1,38 @@
 # Changelog
 
 
+## v1.3.5
+
+[compare changes](https://undefined/undefined/compare/v1.3.1...v1.3.5)
+
+### 🏡 Chore
+
+- Add cnb to all currencies (4bec379)
+- Add cnb to all currencies (0241d8a)
+- Switch to bun (#4)
+
+### ❤️ Contributors
+
+- FF <filip.f@develit.io>
+- Danielkrul97 <info@danielkrul.com>
+- Daniel Krůl <dankrul.krul@gmail.com>
+
+## v1.3.2
+
+[compare changes](https://undefined/undefined/compare/v1.3.1...v1.3.2)
+
+### 🏡 Chore
+
+- Add cnb to all currencies (4bec379)
+- Add cnb to all currencies (0241d8a)
+- Switch to bun (#4)
+
+### ❤️ Contributors
+
+- FF <filip.f@develit.io>
+- Danielkrul97 <info@danielkrul.com>
+- Daniel Krůl <dankrul.krul@gmail.com>
+
 ## v1.3.1
 
 [compare changes](https://undefined/undefined/compare/v1.3.0...v1.3.1)
