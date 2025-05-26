@@ -29,10 +29,10 @@
     "dev": "vitest dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepack": "pnpm build",
-    "release": "pnpm build && npx changelogen@latest --release --push && npm publish --access public",
-    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
-    "test:types": "tsc --noEmit --skipLibCheck"
+    "prepack": "bun run build",
+    "release": "bun run build && bunx changelogen@latest --release --push && npm publish --access public",
+    "test": "bun lint && bun typecheck && bun vitest run --coverage",
+    "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "devDependencies": {
     "@types/node": "^22.12.0",
@@ -45,6 +45,5 @@
     "typescript": "^5.7.3",
     "unbuild": "^3.3.1",
     "vitest": "^3.0.4"
-  },
-  "packageManager": "pnpm@10.1.0+sha512.c89847b0667ddab50396bbbd008a2a43cf3b581efd59cf5d9aa8923ea1fb4b8106c041d540d08acb095037594d73ebc51e1ec89ee40c88b30b8a66c0fae0ac1b"
+  }
 }
