@@ -5,22 +5,6 @@
 
 [compare changes](https://undefined/undefined/compare/v1.3.3...v1.3.2)
 
-### 🏡 Chore
-
-- **release:** V1.3.3 (1aee0d7)
-
-### ❤️ Contributors
-
-- Daniel Krůl <dankrul.krul@gmail.com>
-
-## v1.3.3
-
-[compare changes](https://undefined/undefined/compare/v1.3.3...v1.3.3)
-
-## v1.3.3
-
-[compare changes](https://undefined/undefined/compare/v1.3.1...v1.3.3)
-
 ## v1.3.1
 
 [compare changes](https://undefined/undefined/compare/v1.3.0...v1.3.1)
