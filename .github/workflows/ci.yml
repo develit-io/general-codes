@@ -1,4 +1,4 @@
-name: ci
+name: CI
 
 on:
   push:
@@ -9,21 +9,23 @@ on:
       - main
 
 jobs:
-  ci:
+  Check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: npm i -g corepack@latest
-      - run: corepack enable
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
-      - run: pnpm install
-      - run: pnpm lint
-      - run: pnpm test:types
-      - run: pnpm build
-      - run: pnpm vitest --coverage
-      - uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Run typecheck
+        run: bun typecheck
+
+      - name: Run codecheck
+        run: bun lint
+
+      - name: Build
+        run: bun run build
