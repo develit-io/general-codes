@@ -1,18 +1,6 @@
 # Changelog
 
 
-## v1.3.6
-
-[compare changes](https://undefined/undefined/compare/v1.3.5...v1.3.6)
-
-### 🏡 Chore
-
-- Kraken crypto fiat pairs (8ae7572)
-
-### ❤️ Contributors
-
-- Danielkrul97 <daniel.krul@develit.io>
-
 ## v1.3.5
 
 [compare changes](https://undefined/undefined/compare/v1.3.1...v1.3.5)
@@ -124,4 +112,3 @@
 ### ❤️ Contributors
 
 - Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
-
