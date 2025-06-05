@@ -35,4 +35,3 @@ export type { CountryCode2, CountryCode3, CountryCurrency, CountryPhoneCode, Cou
 export type { CurrencyCode } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
 export type { LanguageCode } from '../codes/languages'
-
