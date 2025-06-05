@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://undefined/undefined/compare/v1.3.5...v1.4.0)
+
+### 🚀 Enhancements
+
+- Add sanctions to countries (c8b83d4)
+
+### 🩹 Fixes
+
+- Lint fix (c182460)
+
+### ❤️ Contributors
+
+- Tonda <tonda@develit.io>
+
 ## v1.3.5
 
 [compare changes](https://undefined/undefined/compare/v1.3.1...v1.3.5)
