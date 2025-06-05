@@ -49,6 +49,7 @@ type Country = {
   vat: number;
   priority?: number;
   translatedName?: string;
+  sanctions?: boolean;
 };
 ```
 
