@@ -74,6 +74,12 @@ export const pairList = {
   FILGBP: 'FILGBP',
   SHIBEUR: 'SHIBEUR',
   SHIBUSD: 'SHIBUSD',
+  DAIEUR: 'DAIEUR',
+  DAIUSD: 'DAIUSD',
+  USDCEUR: 'USDCEUR',
+  USDCUSD: 'USDCUSD',
+  WBTCEUR: 'WBTCEUR',
+  WBTCUSD: 'WBTCUSD',
 } as const satisfies KrakenPairs
 
 /**
