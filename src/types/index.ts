@@ -31,6 +31,7 @@ export type CurrencyProvider = {
   url: string
 }
 
+export type KrakenPairs = Record<string, string>
 export type { CountryCode2, CountryCode3, CountryCurrency, CountryPhoneCode, CountryVat } from '../codes/countries'
 export type { CurrencyCode } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
