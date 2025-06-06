@@ -8,6 +8,7 @@ export type Country = {
   vat: number
   priority?: number
   translatedName?: string
+  sanctions?: boolean
 }
 
 export type Language = {
@@ -31,14 +32,7 @@ export type CurrencyProvider = {
 }
 
 export type KrakenPairs = Record<string, string>
-
+export type { CountryCode2, CountryCode3, CountryCurrency, CountryPhoneCode, CountryVat } from '../codes/countries'
 export type { CurrencyCode } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
-export type {
-  CountryCode2,
-  CountryCode3,
-  CountryCurrency,
-  CountryPhoneCode,
-  CountryVat,
-} from '../codes/countries'
 export type { LanguageCode } from '../codes/languages'

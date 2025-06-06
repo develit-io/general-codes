@@ -9,6 +9,7 @@ const countries = [
     name: 'Afghanistan',
     native: 'افغانستان',
     vat: 10,
+    sanctions: true,
   },
   {
     code2: 'AL',
@@ -153,6 +154,7 @@ const countries = [
     name: 'Barbados',
     native: 'Barbados',
     vat: 17.5,
+    sanctions: true,
   },
   {
     code2: 'BY',
@@ -270,6 +272,7 @@ const countries = [
     name: 'Burkina Faso',
     native: 'Burkina Faso',
     vat: 18,
+    sanctions: true,
   },
   {
     code2: 'BI',
@@ -297,6 +300,7 @@ const countries = [
     name: 'Cameroon',
     native: 'Cameroon',
     vat: 19.25,
+    sanctions: true,
   },
   {
     code2: 'CA',
@@ -433,6 +437,7 @@ const countries = [
     name: 'Democratic Republic of the Congo',
     native: 'République démocratique du Congo',
     vat: 18,
+    sanctions: true,
   },
   {
     code2: 'DK',
@@ -722,6 +727,7 @@ const countries = [
     name: 'Haiti',
     native: 'Haïti',
     vat: 10,
+    sanctions: true,
   },
   {
     code2: 'HN',
@@ -776,6 +782,7 @@ const countries = [
     name: 'Iran',
     native: 'ایران',
     vat: 9,
+    sanctions: true,
   },
   {
     code2: 'IQ',
@@ -839,6 +846,7 @@ const countries = [
     name: 'Jamaica',
     native: 'Jamaica',
     vat: 20,
+    sanctions: true,
   },
   {
     code2: 'JP',
@@ -1046,6 +1054,7 @@ const countries = [
     name: 'Mali',
     native: 'Mali',
     vat: 18,
+    sanctions: true,
   },
   {
     code2: 'MT',
@@ -1163,6 +1172,7 @@ const countries = [
     name: 'Mozambique',
     native: 'Moçambique',
     vat: 17,
+    sanctions: true,
   },
   {
     code2: 'NA',
@@ -1226,6 +1236,7 @@ const countries = [
     name: 'Nigeria',
     native: 'Nigeria',
     vat: 7.5,
+    sanctions: true,
   },
   {
     code2: 'NU',
@@ -1253,6 +1264,7 @@ const countries = [
     name: 'North Korea',
     native: '북한',
     vat: 10,
+    sanctions: true,
   },
   {
     code2: 'NO',
@@ -1298,6 +1310,7 @@ const countries = [
     name: 'Panama',
     native: 'Panamá',
     vat: 7,
+    sanctions: true,
   },
   {
     code2: 'PG',
@@ -1334,6 +1347,7 @@ const countries = [
     name: 'Philippines',
     native: 'Pilipinas',
     vat: 12,
+    sanctions: true,
   },
   {
     code2: 'PL',
@@ -1407,6 +1421,7 @@ const countries = [
     name: 'Russia',
     native: 'Россия',
     vat: 20,
+    sanctions: true,
   },
   {
     code2: 'RW',
@@ -1497,6 +1512,7 @@ const countries = [
     name: 'Senegal',
     native: 'Sénégal',
     vat: 18,
+    sanctions: true,
   },
   {
     code2: 'RS',
@@ -1579,6 +1595,7 @@ const countries = [
     name: 'South Africa',
     native: 'South Africa',
     vat: 15,
+    sanctions: true,
   },
   {
     code2: 'KR',
@@ -1597,6 +1614,7 @@ const countries = [
     name: 'South Sudan',
     native: 'South Sudan',
     vat: 15,
+    sanctions: true,
   },
   {
     code2: 'ES',
@@ -1696,6 +1714,7 @@ const countries = [
     name: 'Tanzania',
     native: 'Tanzania',
     vat: 18,
+    sanctions: true,
   },
   {
     code2: 'TH',
@@ -1732,6 +1751,7 @@ const countries = [
     name: 'Trinidad and Tobago',
     native: 'Trinidad and Tobago',
     vat: 12.5,
+    sanctions: true,
   },
   {
     code2: 'TN',
@@ -1786,6 +1806,7 @@ const countries = [
     name: 'Uganda',
     native: 'Uganda',
     vat: 18,
+    sanctions: true,
   },
   {
     code2: 'UA',
@@ -1804,6 +1825,7 @@ const countries = [
     name: 'United Arab Emirates',
     native: 'دولة الإمارات العربية المتحدة',
     vat: 5,
+    sanctions: true,
   },
   {
     code2: 'GB',
@@ -1831,6 +1853,7 @@ const countries = [
     name: 'Vanuatu',
     native: 'Vanuatu',
     vat: 15,
+    sanctions: true,
   },
   {
     code2: 'VE',
@@ -1849,6 +1872,7 @@ const countries = [
     name: 'Vietnam',
     native: 'Việt Nam',
     vat: 10,
+    sanctions: true,
   },
   {
     code2: 'WF',
@@ -1876,6 +1900,7 @@ const countries = [
     name: 'Yemen',
     native: 'اليَمَن',
     vat: 5,
+    sanctions: true,
   },
   {
     code2: 'ZM',
