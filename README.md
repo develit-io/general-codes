@@ -76,7 +76,7 @@ Each bank entry follows this structure:
 interface Bank {
   name: string
   code: string
-  country: string[]
+  country: string
 };
 ```
 

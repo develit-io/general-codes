@@ -34,7 +34,7 @@ export type CurrencyProvider = {
 export interface Bank {
   name: string
   code: string
-  country: string[]
+  country: string
 }
 
 export type { BankCode } from '../codes/banks'
