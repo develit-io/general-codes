@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.0
+
+[compare changes](https://undefined/undefined/compare/v1.4.0...v1.5.0)
+
+### 🚀 Enhancements
+
+- Add banks (#9)
+
+### ❤️ Contributors
+
+- FF <filip.f@develit.io>
+
 ## v1.4.0
 
 [compare changes](https://undefined/undefined/compare/v1.3.5...v1.4.0)
