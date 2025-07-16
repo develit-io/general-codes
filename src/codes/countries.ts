@@ -835,7 +835,7 @@ const countries = [
     currency: 'USD',
     phoneCode: '+225',
     name: 'Ivory Coast',
-    native: 'Côte d\'Ivoire',
+    native: "Côte d'Ivoire",
     vat: 18,
   },
   {
@@ -1842,7 +1842,7 @@ const countries = [
     currency: 'USD',
     phoneCode: '+998',
     name: 'Uzbekistan',
-    native: 'O\'zbekiston',
+    native: "O'zbekiston",
     vat: 20,
   },
   {
@@ -1924,8 +1924,8 @@ const countries = [
 
 export default countries
 
-export type CountryCode2 = typeof countries[number]['code2']
-export type CountryCode3 = typeof countries[number]['code3']
-export type CountryCurrency = typeof countries[number]['currency']
-export type CountryPhoneCode = typeof countries[number]['phoneCode']
-export type CountryVat = typeof countries[number]['vat']
+export type CountryCode2 = (typeof countries)[number]['code2']
+export type CountryCode3 = (typeof countries)[number]['code3']
+export type CountryCurrency = (typeof countries)[number]['currency']
+export type CountryPhoneCode = (typeof countries)[number]['phoneCode']
+export type CountryVat = (typeof countries)[number]['vat']
