@@ -31,7 +31,20 @@ export type CurrencyProvider = {
   url: string
 }
 
-export type { CountryCode2, CountryCode3, CountryCurrency, CountryPhoneCode, CountryVat } from '../codes/countries'
+export interface Bank {
+  name: string
+  code: string
+  country: string
+}
+
+export type { BankCode } from '../codes/banks'
+export type {
+  CountryCode2,
+  CountryCode3,
+  CountryCurrency,
+  CountryPhoneCode,
+  CountryVat,
+} from '../codes/countries'
 export type { CurrencyCode } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
 export type { LanguageCode } from '../codes/languages'

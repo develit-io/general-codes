@@ -1,6 +1,6 @@
 # `@develit-io/general-codes`
 
-📦 **`@develit-io/general-codes`** is a utility package that provides standardized codes for **countries**, **currencies**, **languages**, and **exchange rate providers**. It serves as a central repository for handling common reference data in applications.
+📦 **`@develit-io/general-codes`** is a utility package that provides standardized codes for **countries**, **currencies**, **banks**, **languages**, and **exchange rate providers**. It serves as a central repository for handling common reference data in applications.
 
 ## 📥 Installation
 
@@ -12,6 +12,7 @@ pnpm add @develit-io/general-codes
 
 - 🌍 **Countries** – Standardized country codes and names.
 - 💱 **Currencies** – Includes fiat and crypto currencies with provider mapping.
+- 🏦 **Banks** – Bank codes and names.
 - 🗣 **Languages** – Language codes and names.
 - 🔗 **Currency Providers** – Defines supported exchange rate providers with configurable API endpoints.
 
@@ -20,10 +21,11 @@ pnpm add @develit-io/general-codes
 ### Importing Data
 
 ```ts
-import { CODES, COUNTRIES, CURRENCIES, LANGUAGES, CURRENCY_PROVIDERS } from "@develit-io/general-codes";
+import { CODES, BANKS, COUNTRIES, CURRENCIES, LANGUAGES, CURRENCY_PROVIDERS } from "@develit-io/general-codes";
 
 console.log(COUNTRIES); // List of country codes
 console.log(CURRENCIES); // List of fiat and crypto currencies
+console.log(BANKS); // List of banks
 console.log(LANGUAGES); // Language codes
 console.log(CURRENCY_PROVIDERS); // Exchange rate providers
 
@@ -63,6 +65,18 @@ type Currency = {
   symbolBefore: boolean;
   name: string;
   providers: CurrencyProvider[]
+};
+```
+
+### 🏦 Banks (`BANKS`)
+
+Each bank entry follows this structure:
+
+```ts
+interface Bank {
+  name: string
+  code: string
+  country: string
 };
 ```
 

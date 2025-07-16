@@ -33,9 +33,19 @@ const languages = [
   { code: 'kk', name: 'Kazakh', native: 'қазақ тілі', cs: 'Kazachština' },
   { code: 'hu', name: 'Hungarian', native: 'Magyar', cs: 'Maďarština' },
   { code: 'mk', name: 'Macedonian', native: 'македонски', cs: 'Makedonština' },
-  { code: 'lt', name: 'Lithuanian', native: 'lietuvių kalba', cs: 'Litevština' },
+  {
+    code: 'lt',
+    name: 'Lithuanian',
+    native: 'lietuvių kalba',
+    cs: 'Litevština',
+  },
   { code: 'lv', name: 'Latvian', native: 'latviešu valoda', cs: 'Lotyšština' },
-  { code: 'lb', name: 'Luxembourgish', native: 'Lëtzebuergesch', cs: 'Lucemburština' },
+  {
+    code: 'lb',
+    name: 'Luxembourgish',
+    native: 'Lëtzebuergesch',
+    cs: 'Lucemburština',
+  },
   { code: 'mn', name: 'Mongolian', native: 'Монгол хэл', cs: 'Mongolština' },
   { code: 'no', name: 'Norwegian', native: 'Norsk', cs: 'Norština' },
   { code: 'fa', name: 'Persian', native: 'فارسی', cs: 'Perština' },
@@ -53,4 +63,4 @@ const languages = [
 
 export default languages
 
-export type LanguageCode = typeof languages[number]['code']
+export type LanguageCode = (typeof languages)[number]['code']
