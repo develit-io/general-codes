@@ -30,10 +30,14 @@ export const COUNTRY_PHONE_CODES = COUNTRIES.map(
 export const COUNTRY_VATS = COUNTRIES.map(
   (country) => country.vat,
 ) satisfies readonly CODES.CountryVat[]
-export const BANK_CODES = BANKS.map((bank) => bank.code) satisfies readonly CODES.BankCode[]
+export const BANK_CODES = BANKS.map(
+  (bank) => bank.code,
+) satisfies readonly CODES.BankCode[]
 export const LANGUAGE_CODES = LANGUAGES.map(
   (language) => language.code,
 ) satisfies readonly CODES.LanguageCode[]
-export const CURRENCY_PROVIDER_IDS = CURRENCY_PROVIDERS.map((provider) => provider.id) satisfies readonly CODES.CurrencyProviderId[]
+export const CURRENCY_PROVIDER_IDS = CURRENCY_PROVIDERS.map(
+  (provider) => provider.id,
+) satisfies readonly CODES.CurrencyProviderId[]
 
 export { CODES }
