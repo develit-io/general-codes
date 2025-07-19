@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.8.0
+
+[compare changes](https://undefined/undefined/compare/v1.7.0...v1.8.0)
+
+### 🚀 Enhancements
+
+- Export arrays as readonly consts to be used in zod (03e2bb6)
+
+### 🩹 Fixes
+
+- **ci:** Lint:fix (3bf0d9f)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.7.0
 
 [compare changes](https://undefined/undefined/compare/v1.6.0...v1.7.0)
