@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v1.6.0
+
+[compare changes](https://undefined/undefined/compare/v1.4.0...v1.6.0)
+
+### 🚀 Enhancements
+
+- Add banks (#9)
+- **codes:** Export codes as arrays (77fee65)
+
+### 🏡 Chore
+
+- Sanctions readme (0dc19a5)
+- **release:** V1.5.0 (8d80f38)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+- Ffdevelit <filip.f@develit.io>
+- FF <filip.f@develit.io>
+- Tonda <tonda@develit.io>
+
 ## v1.5.0
 
 [compare changes](https://undefined/undefined/compare/v1.4.0...v1.5.0)
