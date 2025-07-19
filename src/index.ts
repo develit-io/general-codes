@@ -12,29 +12,28 @@ import LANGUAGES from './codes/languages'
 import * as CODES from './types'
 
 // Export arrays with codes only
-export const CURRENCY_CODES: CODES.CurrencyCode[] = CURRENCIES.map(
+export const CURRENCY_CODES = CURRENCIES.map(
   (currency) => currency.code,
-)
-export const COUNTRY_CODES_2: CODES.CountryCode2[] = COUNTRIES.map(
+) satisfies readonly CODES.CurrencyCode[]
+export const COUNTRY_CODES_2 = COUNTRIES.map(
   (country) => country.code2,
-)
-export const COUNTRY_CODES_3: CODES.CountryCode3[] = COUNTRIES.map(
+) satisfies readonly CODES.CountryCode2[]
+export const COUNTRY_CODES_3 = COUNTRIES.map(
   (country) => country.code3,
-)
-export const COUNTRY_CURRENCIES: CODES.CountryCurrency[] = COUNTRIES.map(
+) satisfies readonly CODES.CountryCode3[]
+export const COUNTRY_CURRENCIES = COUNTRIES.map(
   (country) => country.currency,
-)
-export const COUNTRY_PHONE_CODES: CODES.CountryPhoneCode[] = COUNTRIES.map(
+) satisfies readonly CODES.CountryCurrency[]
+export const COUNTRY_PHONE_CODES = COUNTRIES.map(
   (country) => country.phoneCode,
-)
-export const COUNTRY_VATS: CODES.CountryVat[] = COUNTRIES.map(
+) satisfies readonly CODES.CountryPhoneCode[]
+export const COUNTRY_VATS = COUNTRIES.map(
   (country) => country.vat,
-)
-export const BANK_CODES: CODES.BankCode[] = BANKS.map((bank) => bank.code)
-export const LANGUAGE_CODES: CODES.LanguageCode[] = LANGUAGES.map(
+) satisfies readonly CODES.CountryVat[]
+export const BANK_CODES = BANKS.map((bank) => bank.code) satisfies readonly CODES.BankCode[]
+export const LANGUAGE_CODES = LANGUAGES.map(
   (language) => language.code,
-)
-export const CURRENCY_PROVIDER_IDS: CODES.CurrencyProviderId[] =
-  CURRENCY_PROVIDERS.map((provider) => provider.id)
+) satisfies readonly CODES.LanguageCode[]
+export const CURRENCY_PROVIDER_IDS = CURRENCY_PROVIDERS.map((provider) => provider.id) satisfies readonly CODES.CurrencyProviderId[]
 
 export { CODES }
