@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.8.1
+
+[compare changes](https://undefined/undefined/compare/v1.8.0...v1.8.1)
+
+### 🩹 Fixes
+
+- Make code arrays compatible with Zod enum types (c6a55f0)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.8.0
 
 [compare changes](https://undefined/undefined/compare/v1.7.0...v1.8.0)
