@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.7.0
+
+[compare changes](https://undefined/undefined/compare/v1.6.0...v1.7.0)
+
+### 🚀 Enhancements
+
+- Try to export derived codes as readonly (0c0fb56)
+
+### 🩹 Fixes
+
+- **ci:** Lint:fix (baadef7)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.6.0
 
 [compare changes](https://undefined/undefined/compare/v1.4.0...v1.6.0)
