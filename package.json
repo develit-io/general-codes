@@ -29,7 +29,6 @@
     "dev": "vitest dev",
     "lint": "biome check",
     "lint:fix": "biome check --fix",
-    "prepack": "bun run build",
     "release": "bun run build && bunx changelogen@latest --release --push && npm publish --access public",
     "test": "bun lint && bun typecheck && bun vitest run --coverage",
     "typecheck": "tsc --noEmit --skipLibCheck"
