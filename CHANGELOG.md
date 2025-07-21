@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.10.0
+
+[compare changes](https://undefined/undefined/compare/v1.9.0...v1.10.0)
+
+### 🚀 Enhancements
+
+- Add crypto networks and utils functions (4862eb6)
+
+### 🩹 Fixes
+
+- Lint:fix (20bf5b7)
+
+### 🏡 Chore
+
+- **scripts:** Remove prepack in order to trigger auto github release (02ce29a)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.9.0
 
 [compare changes](https://undefined/undefined/compare/v1.8.1...v1.9.0)
