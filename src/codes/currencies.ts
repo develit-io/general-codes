@@ -9,6 +9,8 @@ const currencies = [
     name: 'Czech Koruna',
     providers: ['CNB', 'currencyLayer', 'currencyCloud'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'EUR',
@@ -17,6 +19,8 @@ const currencies = [
     name: 'Euro',
     providers: ['currencyLayer', 'currencyCloud'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'USD',
@@ -25,6 +29,8 @@ const currencies = [
     name: 'United States Dollar',
     providers: ['currencyLayer', 'currencyCloud'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'PLN',
@@ -33,6 +39,8 @@ const currencies = [
     name: 'Polish Złoty',
     providers: ['currencyLayer', 'currencyCloud'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'RON',
@@ -41,6 +49,8 @@ const currencies = [
     name: 'Romanian Leu',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'GBP',
@@ -49,6 +59,8 @@ const currencies = [
     name: 'British Pound Sterling',
     providers: ['currencyLayer', 'CNB', 'currencyCloud'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'RUB',
@@ -57,6 +69,8 @@ const currencies = [
     name: 'Russian Ruble',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'HUF',
@@ -65,6 +79,8 @@ const currencies = [
     name: 'Hungarian Forint',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'CHF',
@@ -73,6 +89,8 @@ const currencies = [
     name: 'Swiss Franc',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'DKK',
@@ -81,6 +99,8 @@ const currencies = [
     name: 'Danish Krone',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'SEK',
@@ -89,6 +109,8 @@ const currencies = [
     name: 'Swedish Krona',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'HRK',
@@ -97,6 +119,8 @@ const currencies = [
     name: 'Croatian Kuna',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'NOK',
@@ -105,6 +129,8 @@ const currencies = [
     name: 'Norwegian Krone',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'BGN',
@@ -113,6 +139,8 @@ const currencies = [
     name: 'Bulgarian Lev',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'TRY',
@@ -121,6 +149,8 @@ const currencies = [
     name: 'Turkish Lira',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'AUD',
@@ -129,6 +159,8 @@ const currencies = [
     name: 'Australian Dollar',
     providers: ['currencyLayer', 'CNB', 'currencyCloud'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'CAD',
@@ -137,6 +169,8 @@ const currencies = [
     name: 'Canadian Dollar',
     providers: ['currencyLayer', 'CNB', 'currencyCloud'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'JPY',
@@ -145,6 +179,8 @@ const currencies = [
     name: 'Japanese Yen',
     providers: ['currencyLayer', 'CNB'],
     decimals: 0,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'CNY',
@@ -153,6 +189,8 @@ const currencies = [
     name: 'Chinese Yuan',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'INR',
@@ -161,6 +199,8 @@ const currencies = [
     name: 'Indian Rupee',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'BRL',
@@ -169,6 +209,8 @@ const currencies = [
     name: 'Brazilian Real',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'MXN',
@@ -177,6 +219,8 @@ const currencies = [
     name: 'Mexican Peso',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'ZAR',
@@ -185,6 +229,8 @@ const currencies = [
     name: 'South African Rand',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'SGD',
@@ -193,6 +239,8 @@ const currencies = [
     name: 'Singapore Dollar',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'HKD',
@@ -201,6 +249,8 @@ const currencies = [
     name: 'Hong Kong Dollar',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'KRW',
@@ -209,6 +259,8 @@ const currencies = [
     name: 'South Korean Won',
     providers: ['currencyLayer', 'CNB'],
     decimals: 0,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'MYR',
@@ -217,6 +269,8 @@ const currencies = [
     name: 'Malaysian Ringgit',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'THB',
@@ -225,6 +279,8 @@ const currencies = [
     name: 'Thai Baht',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'IDR',
@@ -233,6 +289,8 @@ const currencies = [
     name: 'Indonesian Rupiah',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'PHP',
@@ -241,6 +299,8 @@ const currencies = [
     name: 'Philippine Peso',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'AED',
@@ -249,6 +309,8 @@ const currencies = [
     name: 'UAE Dirham',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'SAR',
@@ -257,6 +319,8 @@ const currencies = [
     name: 'Saudi Riyal',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'ILS',
@@ -265,6 +329,8 @@ const currencies = [
     name: 'Israeli New Shekel',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'EGP',
@@ -273,6 +339,8 @@ const currencies = [
     name: 'Egyptian Pound',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'NGN',
@@ -281,6 +349,8 @@ const currencies = [
     name: 'Nigerian Naira',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'PKR',
@@ -289,6 +359,8 @@ const currencies = [
     name: 'Pakistani Rupee',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'COP',
@@ -297,6 +369,8 @@ const currencies = [
     name: 'Colombian Peso',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'CLP',
@@ -305,6 +379,8 @@ const currencies = [
     name: 'Chilean Peso',
     providers: ['currencyLayer', 'CNB'],
     decimals: 0,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'PEN',
@@ -313,6 +389,8 @@ const currencies = [
     name: 'Peruvian Sol',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'VND',
@@ -321,6 +399,8 @@ const currencies = [
     name: 'Vietnamese Dong',
     providers: ['currencyLayer', 'CNB'],
     decimals: 0,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'KZT',
@@ -329,6 +409,8 @@ const currencies = [
     name: 'Kazakhstani Tenge',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
   {
     code: 'UAH',
@@ -337,6 +419,8 @@ const currencies = [
     name: 'Ukrainian Hryvnia',
     providers: ['currencyLayer', 'CNB'],
     decimals: 2,
+    networks: null,
+    type: 'FIAT',
   },
 
   // 🔹 Crypto Currencies
@@ -347,6 +431,8 @@ const currencies = [
     name: 'Bitcoin',
     providers: ['kraken', 'binance'],
     decimals: 8,
+    networks: ['BTC'],
+    type: 'CRYPTO',
   },
   {
     code: 'ETH',
@@ -355,6 +441,8 @@ const currencies = [
     name: 'Ethereum',
     providers: ['kraken', 'binance'],
     decimals: 18,
+    networks: ['ETH', 'ARBITRUM', 'OPTIMISM', 'POLYGON'],
+    type: 'CRYPTO',
   },
   {
     code: 'ADA',
@@ -363,6 +451,8 @@ const currencies = [
     name: 'Cardano',
     providers: ['kraken', 'binance'],
     decimals: 6,
+    networks: ['CARDANO'],
+    type: 'CRYPTO',
   },
   {
     code: 'DOT',
@@ -371,6 +461,8 @@ const currencies = [
     name: 'Polkadot',
     providers: ['kraken', 'binance'],
     decimals: 10,
+    networks: ['POLKADOT'],
+    type: 'CRYPTO',
   },
   {
     code: 'ATOM',
@@ -379,6 +471,8 @@ const currencies = [
     name: 'Cosmos',
     providers: ['kraken', 'binance'],
     decimals: 6,
+    networks: ['COSMOS'],
+    type: 'CRYPTO',
   },
   {
     code: 'XRP',
@@ -387,6 +481,8 @@ const currencies = [
     name: 'Ripple',
     providers: ['kraken', 'binance'],
     decimals: 6,
+    networks: ['XRP'],
+    type: 'CRYPTO',
   },
   {
     code: 'LTC',
@@ -395,6 +491,8 @@ const currencies = [
     name: 'Litecoin',
     providers: ['kraken', 'binance'],
     decimals: 8,
+    networks: ['LTC'],
+    type: 'CRYPTO',
   },
   {
     code: 'SOL',
@@ -403,6 +501,8 @@ const currencies = [
     name: 'Solana',
     providers: ['kraken', 'binance'],
     decimals: 9,
+    networks: ['SOLANA'],
+    type: 'CRYPTO',
   },
   {
     code: 'DOGE',
@@ -411,6 +511,8 @@ const currencies = [
     name: 'Dogecoin',
     providers: ['kraken', 'binance'],
     decimals: 8,
+    networks: ['DOGE'],
+    type: 'CRYPTO',
   },
   {
     code: 'MATIC',
@@ -419,6 +521,8 @@ const currencies = [
     name: 'Polygon',
     providers: ['kraken', 'binance'],
     decimals: 18,
+    networks: ['ETH', 'POLYGON'],
+    type: 'CRYPTO',
   },
   {
     code: 'AVAX',
@@ -427,9 +531,12 @@ const currencies = [
     name: 'Avalanche',
     providers: ['kraken', 'binance'],
     decimals: 18,
+    networks: ['AVALANCHE'],
+    type: 'CRYPTO',
   },
 ] as const satisfies readonly Currency[]
 
 export default currencies
 
 export type CurrencyCode = (typeof currencies)[number]['code']
+export type CurrencyType = (typeof currencies)[number]['type']

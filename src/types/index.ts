@@ -18,6 +18,15 @@ export type Language = {
   cs: string
 }
 
+export type CryptoNetwork = {
+  code: string
+  name: string
+  nativeCurrency: string
+  chainId?: number
+  rpcUrl?: string
+  explorerUrl?: string
+}
+
 export type Currency = {
   code: string
   symbol: string
@@ -25,6 +34,8 @@ export type Currency = {
   name: string
   providers: string[]
   decimals: number
+  networks?: string[] | null
+  type: 'FIAT' | 'CRYPTO'
 }
 
 export type CurrencyProvider = {
@@ -46,6 +57,8 @@ export type {
   CountryPhoneCode,
   CountryVat,
 } from '../codes/countries'
-export type { CurrencyCode } from '../codes/currencies'
+export type { CryptoNetworkCode } from '../codes/crypto-networks'
+export type { CurrencyCode, CurrencyType } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
 export type { LanguageCode } from '../codes/languages'
+export type { FormatCurrencyOptions } from '../utils'
