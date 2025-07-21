@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.9.0
+
+[compare changes](https://undefined/undefined/compare/v1.8.1...v1.9.0)
+
+### 🚀 Enhancements
+
+- **currencies:** Add decimals (4388fb1)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.8.1
 
 [compare changes](https://undefined/undefined/compare/v1.8.0...v1.8.1)
