@@ -8,6 +8,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Czech Koruna',
     providers: ['CNB', 'currencyLayer', 'currencyCloud'],
+    decimals: 2,
   },
   {
     code: 'EUR',
@@ -15,6 +16,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Euro',
     providers: ['currencyLayer', 'currencyCloud'],
+    decimals: 2,
   },
   {
     code: 'USD',
@@ -22,6 +24,7 @@ const currencies = [
     symbolBefore: true,
     name: 'United States Dollar',
     providers: ['currencyLayer', 'currencyCloud'],
+    decimals: 2,
   },
   {
     code: 'PLN',
@@ -29,6 +32,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Polish Złoty',
     providers: ['currencyLayer', 'currencyCloud'],
+    decimals: 2,
   },
   {
     code: 'RON',
@@ -36,6 +40,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Romanian Leu',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'GBP',
@@ -43,6 +48,7 @@ const currencies = [
     symbolBefore: true,
     name: 'British Pound Sterling',
     providers: ['currencyLayer', 'CNB', 'currencyCloud'],
+    decimals: 2,
   },
   {
     code: 'RUB',
@@ -50,6 +56,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Russian Ruble',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'HUF',
@@ -57,6 +64,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Hungarian Forint',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'CHF',
@@ -64,6 +72,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Swiss Franc',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'DKK',
@@ -71,6 +80,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Danish Krone',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'SEK',
@@ -78,6 +88,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Swedish Krona',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'HRK',
@@ -85,6 +96,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Croatian Kuna',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'NOK',
@@ -92,6 +104,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Norwegian Krone',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'BGN',
@@ -99,6 +112,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Bulgarian Lev',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'TRY',
@@ -106,6 +120,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Turkish Lira',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'AUD',
@@ -113,6 +128,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Australian Dollar',
     providers: ['currencyLayer', 'CNB', 'currencyCloud'],
+    decimals: 2,
   },
   {
     code: 'CAD',
@@ -120,6 +136,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Canadian Dollar',
     providers: ['currencyLayer', 'CNB', 'currencyCloud'],
+    decimals: 2,
   },
   {
     code: 'JPY',
@@ -127,6 +144,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Japanese Yen',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 0,
   },
   {
     code: 'CNY',
@@ -134,6 +152,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Chinese Yuan',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'INR',
@@ -141,6 +160,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Indian Rupee',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'BRL',
@@ -148,6 +168,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Brazilian Real',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'MXN',
@@ -155,6 +176,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Mexican Peso',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'ZAR',
@@ -162,6 +184,7 @@ const currencies = [
     symbolBefore: true,
     name: 'South African Rand',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'SGD',
@@ -169,6 +192,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Singapore Dollar',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'HKD',
@@ -176,6 +200,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Hong Kong Dollar',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'KRW',
@@ -183,6 +208,7 @@ const currencies = [
     symbolBefore: true,
     name: 'South Korean Won',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 0,
   },
   {
     code: 'MYR',
@@ -190,6 +216,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Malaysian Ringgit',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'THB',
@@ -197,6 +224,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Thai Baht',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'IDR',
@@ -204,6 +232,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Indonesian Rupiah',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'PHP',
@@ -211,6 +240,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Philippine Peso',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'AED',
@@ -218,6 +248,7 @@ const currencies = [
     symbolBefore: false,
     name: 'UAE Dirham',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'SAR',
@@ -225,6 +256,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Saudi Riyal',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'ILS',
@@ -232,6 +264,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Israeli New Shekel',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'EGP',
@@ -239,6 +272,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Egyptian Pound',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'NGN',
@@ -246,6 +280,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Nigerian Naira',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'PKR',
@@ -253,6 +288,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Pakistani Rupee',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'COP',
@@ -260,6 +296,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Colombian Peso',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'CLP',
@@ -267,6 +304,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Chilean Peso',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 0,
   },
   {
     code: 'PEN',
@@ -274,6 +312,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Peruvian Sol',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'VND',
@@ -281,6 +320,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Vietnamese Dong',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 0,
   },
   {
     code: 'KZT',
@@ -288,6 +328,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Kazakhstani Tenge',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
   {
     code: 'UAH',
@@ -295,6 +336,7 @@ const currencies = [
     symbolBefore: false,
     name: 'Ukrainian Hryvnia',
     providers: ['currencyLayer', 'CNB'],
+    decimals: 2,
   },
 
   // 🔹 Crypto Currencies
@@ -304,6 +346,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Bitcoin',
     providers: ['kraken', 'binance'],
+    decimals: 8,
   },
   {
     code: 'ETH',
@@ -311,6 +354,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Ethereum',
     providers: ['kraken', 'binance'],
+    decimals: 18,
   },
   {
     code: 'ADA',
@@ -318,6 +362,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Cardano',
     providers: ['kraken', 'binance'],
+    decimals: 6,
   },
   {
     code: 'DOT',
@@ -325,6 +370,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Polkadot',
     providers: ['kraken', 'binance'],
+    decimals: 10,
   },
   {
     code: 'ATOM',
@@ -332,6 +378,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Cosmos',
     providers: ['kraken', 'binance'],
+    decimals: 6,
   },
   {
     code: 'XRP',
@@ -339,6 +386,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Ripple',
     providers: ['kraken', 'binance'],
+    decimals: 6,
   },
   {
     code: 'LTC',
@@ -346,6 +394,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Litecoin',
     providers: ['kraken', 'binance'],
+    decimals: 8,
   },
   {
     code: 'SOL',
@@ -353,6 +402,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Solana',
     providers: ['kraken', 'binance'],
+    decimals: 9,
   },
   {
     code: 'DOGE',
@@ -360,6 +410,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Dogecoin',
     providers: ['kraken', 'binance'],
+    decimals: 8,
   },
   {
     code: 'MATIC',
@@ -367,6 +418,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Polygon',
     providers: ['kraken', 'binance'],
+    decimals: 18,
   },
   {
     code: 'AVAX',
@@ -374,6 +426,7 @@ const currencies = [
     symbolBefore: true,
     name: 'Avalanche',
     providers: ['kraken', 'binance'],
+    decimals: 18,
   },
 ] as const satisfies readonly Currency[]
 

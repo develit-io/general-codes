@@ -65,7 +65,8 @@ type Currency = {
   symbol: string;
   symbolBefore: boolean;
   name: string;
-  providers: CurrencyProvider[]
+  providers: CurrencyProvider[];
+  decimals: number;
 };
 ```
 
@@ -110,13 +111,13 @@ type CurrencyProvider = {
 Example provider definitions:
 
 ```ts
-const CURRENCY_PROVIDERS: Record<CurrencyProviderId, CurrencyProvider> = {
-  currencyLayer: { id: "currencyLayer", url: "https://api.currencylayer.com/live?access_key=YOUR_ACCESS_KEY&currencies={target}&source={base}" },
-  currencyCloud: { id: "currencyCloud", url: "https://api.currencycloud.com/v2/rates/detailed?buy_currency={target}&sell_currency={base}" },
-  kraken: { id: "kraken", url: "https://api.kraken.com/0/public/Ticker?pair={base}{target}" },
-  binance: { id: "binance", url: "https://api.binance.com/api/v3/ticker/price?symbol={base}{target}" },
-  CNB: { id: "CNB", url: "https://api.cnb.cz/exchange-rate?base={base}&target={target}" }
-};
+const CURRENCY_PROVIDERS = [
+  { id: "currencyLayer", url: "https://api.currencylayer.com/live?access_key={access_key}&currencies={target}&source={base}" },
+  { id: "currencyCloud", url: "https://api.currencycloud.com/v2/rates/detailed?buy_currency={target}&sell_currency={base}" },
+  { id: "kraken", url: "https://api.kraken.com/0/public/Ticker?pair={base}{target}" },
+  { id: "binance", url: "https://api.binance.com/api/v3/ticker/price?symbol={base}{target}" },
+  { id: "CNB", url: "https://api.cnb.cz/cnbapi/exrates/daily" }
+];
 ```
 
 ## 🛠 Development
