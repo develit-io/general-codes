@@ -94,7 +94,7 @@ export const pairList = {
  */
 export const findToKrakenPair = (
   pair: keyof typeof pairList,
-): typeof pairList[typeof pair] => pairList[pair]
+): (typeof pairList)[typeof pair] => pairList[pair]
 
 /**
  * Returns the standard pair code for a given Kraken-specific code.
@@ -104,10 +104,7 @@ export const findToKrakenPair = (
 export const findFromKrakenPair = (
   rawPair: string,
 ): keyof typeof pairList | undefined => {
-  const entries = Object.entries(pairList) as [
-    keyof typeof pairList,
-    string,
-  ][]
+  const entries = Object.entries(pairList) as [keyof typeof pairList, string][]
 
   for (const [standardPair, krakenCode] of entries) {
     if (krakenCode === rawPair) {

@@ -72,9 +72,9 @@ export const CRYPTO_CURRENCY_CODES = [
 
 export { CODES }
 
+export * as KRAKEN_CRYPTO_FIAT_PAIRS from './types'
 // Export utility functions
 export * as UTILS from './utils'
-
 // Export individual utility functions for convenience
 export {
   convertCurrencyAmount,
@@ -102,5 +102,3 @@ export {
   searchNetworks,
   validateCurrencyNetworkPair,
 } from './utils'
-
-export * as KRAKEN_CRYPTO_FIAT_PAIRS from './types'
