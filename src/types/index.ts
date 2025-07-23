@@ -62,3 +62,4 @@ export type { CurrencyCode, CurrencyType } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
 export type { LanguageCode } from '../codes/languages'
 export type { FormatCurrencyOptions } from '../utils'
+export type KrakenPairs = Record<string, string>

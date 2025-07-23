@@ -102,3 +102,5 @@ export {
   searchNetworks,
   validateCurrencyNetworkPair,
 } from './utils'
+
+export * as KRAKEN_CRYPTO_FIAT_PAIRS from './types'
