@@ -3,6 +3,7 @@ export { default as COUNTRIES } from './codes/countries'
 export { default as CRYPTO_NETWORKS } from './codes/crypto-networks'
 export { default as CURRENCIES } from './codes/currencies'
 export { default as CURRENCY_PROVIDERS } from './codes/currency-providers'
+export { default as KRAKEN_CRYPTO_FIAT_PAIRS } from './codes/kraken-crypto-fiat-pairs'
 export { default as LANGUAGES } from './codes/languages'
 
 import BANKS from './codes/banks'
@@ -78,6 +79,8 @@ export * as UTILS from './utils'
 // Export individual utility functions for convenience
 export {
   convertCurrencyAmount,
+  findFromKrakenPair,
+  findToKrakenPair,
   formatCurrency,
   getCryptoCurrencies,
   getCurrenciesByNetwork,
