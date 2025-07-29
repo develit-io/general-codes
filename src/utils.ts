@@ -193,17 +193,17 @@ export const normalizeAmount = (
  * Returns the Kraken-specific pair code for a given standard pair.
  * For example, input "BTCEUR" will return "XXBTZEUR".
  */
-export const findToKrakenPair = <P extends KrakenPairKey>(
-  pair: P,
-): KrakenPairs[P] => KRAKEN_PAIR_LIST[pair]
+export const findToKrakenPair = (
+  pair: KrakenPairKey | string,
+): KrakenPairs[KrakenPairKey] => KRAKEN_PAIR_LIST[pair as KrakenPairKey]
 
 /**
  * Returns the standard pair code for a given Kraken-specific code.
  * For example, input "XXBTZEUR" will return "BTCEUR".
  * If the Kraken code is not found, returns undefined.
  */
-export const findFromKrakenPair = <P extends KrakenPairCode>(
-  rawPair: P,
+export const findFromKrakenPair = (
+  rawPair: KrakenPairCode | string,
 ): KrakenPairKey | undefined => {
   const entries = Object.entries(KRAKEN_PAIR_LIST) as [
     KrakenPairKey,

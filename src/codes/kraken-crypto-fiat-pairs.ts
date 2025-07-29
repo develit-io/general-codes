@@ -91,5 +91,3 @@ export default pairList
 export type KrakenPairKey = keyof typeof pairList
 export type KrakenPairCode = (typeof pairList)[KrakenPairKey]
 export type KrakenPairs = Record<KrakenPairKey, KrakenPairCode>
-
-const _: KrakenPairs = pairList
