@@ -86,33 +86,10 @@ export const pairList = {
   JUPUSD: 'JUPUSD',
 } as const
 
+export default pairList
+
 export type KrakenPairKey = keyof typeof pairList
 export type KrakenPairCode = (typeof pairList)[KrakenPairKey]
 export type KrakenPairs = Record<KrakenPairKey, KrakenPairCode>
 
 const _: KrakenPairs = pairList
-
-/**
- * Returns the Kraken-specific pair code for a given standard pair.
- * For example, input "BTCEUR" will return "XXBTZEUR".
- */
-export const findToKrakenPair = <P extends KrakenPairKey>(
-  pair: P,
-): KrakenPairs[P] => pairList[pair]
-
-/**
- * Returns the standard pair code for a given Kraken-specific code.
- * For example, input "XXBTZEUR" will return "BTCEUR".
- * If the Kraken code is not found, returns undefined.
- */
-export const findFromKrakenPair = <P extends KrakenPairCode>(
-  rawPair: P,
-): KrakenPairKey | undefined => {
-  const entries = Object.entries(pairList) as [KrakenPairKey, KrakenPairCode][]
-
-  for (const [standardPair, krakenCode] of entries) {
-    if (krakenCode === rawPair) return standardPair
-  }
-
-  return undefined
-}

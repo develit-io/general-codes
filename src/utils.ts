@@ -1,5 +1,10 @@
 import CRYPTO_NETWORKS from './codes/crypto-networks'
 import CURRENCIES from './codes/currencies'
+import KRAKEN_PAIR_LIST, {
+  type KrakenPairCode,
+  type KrakenPairKey,
+  type KrakenPairs,
+} from './codes/kraken-crypto-fiat-pairs'
 import type { CryptoNetwork, Currency, CurrencyType } from './types'
 
 export type FormatCurrencyOptions = {
@@ -182,4 +187,32 @@ export const normalizeAmount = (
   if (!currency) return amount
 
   return convertCurrencyAmount(amount, currency.decimals, targetDecimals)
+}
+
+/**
+ * Returns the Kraken-specific pair code for a given standard pair.
+ * For example, input "BTCEUR" will return "XXBTZEUR".
+ */
+export const findToKrakenPair = <P extends KrakenPairKey>(
+  pair: P,
+): KrakenPairs[P] => KRAKEN_PAIR_LIST[pair]
+
+/**
+ * Returns the standard pair code for a given Kraken-specific code.
+ * For example, input "XXBTZEUR" will return "BTCEUR".
+ * If the Kraken code is not found, returns undefined.
+ */
+export const findFromKrakenPair = <P extends KrakenPairCode>(
+  rawPair: P,
+): KrakenPairKey | undefined => {
+  const entries = Object.entries(KRAKEN_PAIR_LIST) as [
+    KrakenPairKey,
+    KrakenPairCode,
+  ][]
+
+  for (const [standardPair, krakenCode] of entries) {
+    if (krakenCode === rawPair) return standardPair
+  }
+
+  return undefined
 }
