@@ -1,4 +1,4 @@
-import type { KrakenPairs } from '../types'
+export type KrakenPairs = Record<string, string>
 
 export const pairList = {
   BTCEUR: 'XXBTZEUR',
