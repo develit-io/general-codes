@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.10.1
+
+[compare changes](https://undefined/undefined/compare/v1.10.0...v1.10.1)
+
+### 🏡 Chore
+
+- Add kraken crypto fiat pairs (7c02f18)
+- Lint (29d7352)
+- Code review (804ce5e)
+- Code review (062adf5)
+- Code review (804c3c4)
+- Code review (19452a5)
+
+### ❤️ Contributors
+
+- Daniel Krůl <dankrul.krul@gmail.com>
+- Danielkrul97 <daniel.krul@develit.io>
+
 ## v1.10.0
 
 [compare changes](https://undefined/undefined/compare/v1.9.0...v1.10.0)
