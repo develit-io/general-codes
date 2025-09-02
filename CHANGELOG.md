@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.11.0
+
+[compare changes](https://undefined/undefined/compare/v1.10.1...v1.11.0)
+
+### 🚀 Enhancements
+
+- **banks:** Add short names (eebcfe8)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.10.1
 
 [compare changes](https://undefined/undefined/compare/v1.10.0...v1.10.1)
