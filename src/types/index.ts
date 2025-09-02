@@ -45,25 +45,27 @@ export type CurrencyProvider = {
 
 export interface Bank {
   name: string
+  shortName: string
   code: string
   country: string
 }
 
 export type { BankCode } from '../codes/banks'
 export type {
-  CountryCode2,
-  CountryCode3,
-  CountryCurrency,
-  CountryPhoneCode,
-  CountryVat,
+    CountryCode2,
+    CountryCode3,
+    CountryCurrency,
+    CountryPhoneCode,
+    CountryVat
 } from '../codes/countries'
 export type { CryptoNetworkCode } from '../codes/crypto-networks'
 export type { CurrencyCode, CurrencyType } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
 export type {
-  KrakenPairCode,
-  KrakenPairKey,
-  KrakenPairs,
+    KrakenPairCode,
+    KrakenPairKey,
+    KrakenPairs
 } from '../codes/kraken-crypto-fiat-pairs'
 export type { LanguageCode } from '../codes/languages'
 export type { FormatCurrencyOptions } from '../utils'
+
