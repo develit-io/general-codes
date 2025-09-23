@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.12.0
+
+[compare changes](https://undefined/undefined/compare/v1.11.0...v1.12.0)
+
+### 🚀 Enhancements
+
+- **codes:** Add 0001 finbricks mock bank (a4070aa)
+
+### 🏡 Chore
+
+- Fix lint (cf26be8)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.11.0
 
 [compare changes](https://undefined/undefined/compare/v1.10.1...v1.11.0)
