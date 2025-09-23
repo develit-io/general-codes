@@ -2,6 +2,12 @@ import type { Bank } from '../types'
 
 const banks = [
   {
+    name: 'Finbricks MOCK_COBS',
+    shortName: 'Finbricks MOCK_COBS',
+    code: '0001',
+    country: 'Czechia',
+  },
+  {
     name: 'Komerční banka, a.s.',
     shortName: 'KB',
     code: '0100',
