@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.12.1
+
+[compare changes](https://undefined/undefined/compare/v1.12.0...v1.12.1)
+
+### 🩹 Fixes
+
+- **sdk:** Fix mock_cobs bank code (6153aab)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.12.0
 
 [compare changes](https://undefined/undefined/compare/v1.11.0...v1.12.0)
