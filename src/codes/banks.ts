@@ -4,7 +4,7 @@ const banks = [
   {
     name: 'Finbricks MOCK_COBS',
     shortName: 'Finbricks MOCK_COBS',
-    code: '0001',
+    code: '5051',
     country: 'Czechia',
   },
   {
