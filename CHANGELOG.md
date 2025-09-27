@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.14.0
+
+[compare changes](https://undefined/undefined/compare/v1.13.1...v1.14.0)
+
+### 🚀 Enhancements
+
+- Fix tradermade provider typo (63394cf)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.13.1
 
 [compare changes](https://undefined/undefined/compare/v1.13.0...v1.13.1)
