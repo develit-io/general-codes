@@ -11,13 +11,19 @@ const currencyProviders = [
   },
   {
     id: 'kraken',
-    url: 'https://api.kraken.com/0/public/Ticker?pair={base}{target}',
+    url: 'https://api.kraken.com/0/public/Ticker?pair={pairs}',
   },
   {
     id: 'binance',
     url: 'https://api.binance.com/api/v3/ticker/price?symbol={base}{target}',
   },
   { id: 'CNB', url: 'https://api.cnb.cz/cnbapi/exrates/daily' },
+  {
+    id: 'trademade-live', url: 'https://marketdata.tradermade.com/api/v1/live?currency={pairs}&api_key={access_key}',
+  },
+  {
+    id: 'trademade-convert', url: 'https://marketdata.tradermade.com/api/v1/convert?from={from}&to={to}&amount={amount}&api_key={access_key}'
+  }
 ] as const satisfies readonly CurrencyProvider[]
 
 export default currencyProviders
