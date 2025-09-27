@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.13.1
+
+[compare changes](https://undefined/undefined/compare/v1.13.0...v1.13.1)
+
+### 🩹 Fixes
+
+- Tradermade provider name typo (3015ec5)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.13.0
 
 [compare changes](https://undefined/undefined/compare/v1.12.1...v1.13.0)
