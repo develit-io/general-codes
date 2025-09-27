@@ -19,11 +19,13 @@ const currencyProviders = [
   },
   { id: 'CNB', url: 'https://api.cnb.cz/cnbapi/exrates/daily' },
   {
-    id: 'tradermade-live', url: 'https://marketdata.tradermade.com/api/v1/live?currency={pairs}&api_key={access_key}',
+    id: 'tradermade-live',
+    url: 'https://marketdata.tradermade.com/api/v1/live?currency={pairs}&api_key={access_key}',
   },
   {
-    id: 'tradermade-convert', url: 'https://marketdata.tradermade.com/api/v1/convert?from={from}&to={to}&amount={amount}&api_key={access_key}'
-  }
+    id: 'tradermade-convert',
+    url: 'https://marketdata.tradermade.com/api/v1/convert?from={from}&to={to}&amount={amount}&api_key={access_key}',
+  },
 ] as const satisfies readonly CurrencyProvider[]
 
 export default currencyProviders
