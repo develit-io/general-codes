@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.13.0
+
+[compare changes](https://undefined/undefined/compare/v1.12.1...v1.13.0)
+
+### 🚀 Enhancements
+
+- Add trademade currency providers (5f43e84)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.12.1
 
 [compare changes](https://undefined/undefined/compare/v1.12.0...v1.12.1)
