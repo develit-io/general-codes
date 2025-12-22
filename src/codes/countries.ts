@@ -1837,6 +1837,15 @@ const countries = [
     vat: 20,
   },
   {
+    code2: 'US',
+    code3: 'USA',
+    currency: 'USD',
+    phoneCode: '+1',
+    name: 'United States of America',
+    native: 'United States',
+    vat: null,
+  },
+  {
     code2: 'UZ',
     code3: 'UZB',
     currency: 'USD',
