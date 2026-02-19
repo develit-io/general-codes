@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.14.1
+
+[compare changes](https://undefined/undefined/compare/v1.14.0...v1.14.1)
+
+### 🏡 Chore
+
+- Lint fix (c01ec73)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.14.0
 
 [compare changes](https://undefined/undefined/compare/v1.13.1...v1.14.0)
