@@ -244,7 +244,7 @@ const banks = [
     shortName: 'Volksbank',
     code: '8030',
     country: 'Czechia',
-    swiftBic: 'VBANDE77' ,
+    swiftBic: 'VBANDE77',
   },
   {
     name: 'Oberbank AG pobočka Česká republika',
@@ -328,6 +328,7 @@ const banks = [
     shortName: 'Test - Devizová burza a.s.',
     code: '8610',
     country: 'Czechia',
+    swiftBic: '',
   },
 ] as const satisfies readonly Bank[]
 
