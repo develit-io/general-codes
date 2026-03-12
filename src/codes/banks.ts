@@ -421,6 +421,13 @@ const banks = [
     country: 'Czechia',
     swiftBic: 'MULTCZPP',
   },
+  {
+    name: 'Test - Devizová burza a.s.',
+    shortName: 'Test - Devizová burza a.s.',
+    code: '8610',
+    country: 'Czechia',
+    swiftBic: '',
+  },
 ] as const satisfies readonly Bank[]
 
 export default banks
