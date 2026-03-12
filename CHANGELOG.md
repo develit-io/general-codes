@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.16.0
+
+[compare changes](https://undefined/undefined/compare/v1.15.0...v1.16.0)
+
+### 🚀 Enhancements
+
+- Add Test - Devizová burza a.s. bank code (8610) (fc111ba)
+- **banks:** Add multiple new banks to the Czechia list (16b291c)
+
+### 🩹 Fixes
+
+- **banks:** Typecheck, lint fix (f2569a1)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+- Jan Trpák <honza.t@develit.io>
+
 ## v1.15.0
 
 [compare changes](https://undefined/undefined/compare/v1.14.0...v1.15.0)
