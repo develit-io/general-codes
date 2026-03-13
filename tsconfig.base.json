@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "erasableSyntaxOnly": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    // Path aliases are needed because `moduleResolution` is set to `Bundler`. Would be nice to investigate it more: https://nx.dev/docs/concepts/typescript-project-linking#project-linking-with-workspaces
+    "paths": {
+      "@packages/general-codes/*": ["./packages/general-codes/*"]
+    }
+  }
+}

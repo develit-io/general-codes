@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '@develit-io/**@*.*.*'
+
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Configure npm authentication
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
+
+      - name: Install NPM dependencies
+        run: bun install
+
+      - name: Build package
+        run: bun run build
+
+      - name: Release Assurance SDK
+        run: npm publish --access public

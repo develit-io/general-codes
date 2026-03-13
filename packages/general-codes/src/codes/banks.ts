@@ -1,4 +1,4 @@
-import type { Bank } from '../types'
+import type { Bank } from '@packages/general-codes/src/types'
 
 const banks = [
   {

@@ -1,45 +1,53 @@
 {
-  "name": "@develit-io/general-codes",
-  "version": "1.17.0",
-  "description": "General Codes",
-  "repository": "@develit-io/general-codes",
-  "license": "MIT",
-  "sideEffects": false,
+  "name": "general-codes",
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
-    }
-  },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
   ],
   "scripts": {
-    "build": "unbuild",
-    "dev": "vitest dev",
+    "postinstall": "lefthook install",
+    "reset": "find . -type d -name 'node_modules' -exec rm -rf {} +",
+    "deps:graph": "nx graph",
     "lint": "biome check",
     "lint:fix": "biome check --fix",
-    "release": "bun run build && bunx changelogen@latest --release --push && npm publish --access public",
-    "test": "bun lint && bun typecheck && bun vitest run --coverage",
-    "typecheck": "tsc --noEmit --skipLibCheck"
+    "typecheck": "nx run-many -t typecheck",
+    "test": "nx run-many -t test",
+    "build:codes": "nx build @develit-io/general-codes",
+    "release:codes": "nx release --projects=@develit-io/general-codes --skip-publish && git push --follow-tags"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.0.6",
-    "@types/node": "^22.12.0",
-    "@vitest/coverage-v8": "^3.0.4",
-    "jiti": "^2.4.2",
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@nx/js": "^22.5.1",
+    "@swc-node/register": "^1.11.1",
+    "@swc/core": "^1.15.11",
+    "@types/node": "^25.5.0",
+    "@vitest/coverage-istanbul": "^4.1.0",
+    "lefthook": "^2.1.1",
+    "lint-staged": "^16.2.7",
+    "nx": "^22.5.1",
     "typescript": "^5.7.3",
     "unbuild": "^3.3.1",
-    "vitest": "^3.0.4"
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "~4.1.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "git-hooks": {
+    "pre-commit": "bunx lint-staged",
+    "commit-msg": "bun commitlint --edit $1"
+  },
+  "lint-staged": {
+    "*": [
+      "biome check --fix ."
+    ]
   }
 }

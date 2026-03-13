@@ -1,4 +1,4 @@
-import type { Language } from '../types'
+import type { Language } from '@packages/general-codes/src/types'
 
 const languages = [
   { code: 'en', name: 'English', native: 'English', cs: 'Angličtina' },

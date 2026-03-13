@@ -1,4 +1,4 @@
-import type { CurrencyProvider } from '../types'
+import type { CurrencyProvider } from '@packages/general-codes/src/types'
 
 const currencyProviders = [
   {

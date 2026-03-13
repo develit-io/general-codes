@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # GitHub Actions
+  - package-ecosystem: github-actions
+    rebase-strategy: disabled
+    schedule:
+      interval: weekly
+      day: monday
+      time: '00:00'
+    directory: /
+    allow:
+      - dependency-type: direct
+    commit-message:
+      include: scope
+      prefix: 'chore'
+    labels:
+      - Dependencies

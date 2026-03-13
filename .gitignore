@@ -1,9 +1,39 @@
-node_modules
-coverage
-dist
-.vscode
-.idea
+# Operating System
 .DS_Store
-.eslintcache
-*.log*
-*.env*
+Thumbs.dll
+
+# Environment
+.env
+.env*.local
+next-env.d.ts
+
+# Dependencies
+node_modules
+
+# Wrangler
+.wrangler
+
+# Vitest
+coverage
+
+# IDE
+.idea
+.vscode
+
+# Alchemy
+.alchemy
+
+# Nuxt
+.nuxt
+
+# Build
+dist
+**/.vitepress/cache
+docs-bundle.ts
+
+# Nx
+.nx
+
+# TypeScript
+tsbuild
+tsconfig.tsbuildinfo

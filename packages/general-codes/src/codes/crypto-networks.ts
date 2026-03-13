@@ -1,4 +1,4 @@
-import type { CryptoNetwork } from '../types'
+import type { CryptoNetwork } from '@packages/general-codes/src/types'
 
 const cryptoNetworks = [
   {

@@ -1,4 +1,4 @@
-import type { CzNace } from '../types'
+import type { CzNace } from '@packages/general-codes/src/types'
 
 const czNace = [
   {
