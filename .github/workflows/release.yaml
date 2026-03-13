@@ -26,7 +26,7 @@ jobs:
         run: bun install
 
       - name: Build package
-        run: bun run build
+        run: bun build:codes
 
       - name: Release Assurance SDK
         run: npm publish --access public
