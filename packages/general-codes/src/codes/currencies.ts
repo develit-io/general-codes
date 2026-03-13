@@ -1,4 +1,4 @@
-import type { Currency } from '../types'
+import type { Currency } from '@packages/general-codes/src/types'
 
 const currencies = [
   // 🔹 FIAT Currencies

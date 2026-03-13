@@ -1,11 +1,15 @@
-import CRYPTO_NETWORKS from './codes/crypto-networks'
-import CURRENCIES from './codes/currencies'
+import CRYPTO_NETWORKS from '@packages/general-codes/src/codes/crypto-networks'
+import CURRENCIES from '@packages/general-codes/src/codes/currencies'
 import KRAKEN_PAIR_LIST, {
   type KrakenPairCode,
   type KrakenPairKey,
   type KrakenPairs,
-} from './codes/kraken-crypto-fiat-pairs'
-import type { CryptoNetwork, Currency, CurrencyType } from './types'
+} from '@packages/general-codes/src/codes/kraken-crypto-fiat-pairs'
+import type {
+  CryptoNetwork,
+  Currency,
+  CurrencyType,
+} from '@packages/general-codes/src/types'
 
 export type FormatCurrencyOptions = {
   showSymbol?: boolean

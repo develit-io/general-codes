@@ -1,0 +1,25 @@
+{
+  "name": "@develit-io/general-codes",
+  "version": "1.17.0",
+  "description": "General Codes",
+  "author": "Develit.io",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "build": "unbuild",
+    "lint": "biome check",
+    "lint:fix": "biome check --fix",
+    "test": "vitest",
+    "test:unit": "vitest"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ]
+}

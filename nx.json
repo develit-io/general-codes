@@ -1,0 +1,49 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "tui": {
+    "enabled": false
+  },
+  "release": {
+    "projectsRelationship": "independent",
+    "version": {
+      "conventionalCommits": true
+    },
+    "conventionalCommits": {
+      "types": {
+        "build": {
+          "semverBump": "patch"
+        },
+        "chore": {
+          "semverBump": "patch"
+        },
+        "refactor": {
+          "semverBump": "patch"
+        },
+        "style": {
+          "semverBump": "patch"
+        }
+      }
+    },
+    "changelog": {
+      "projectChangelogs": {
+        "renderOptions": {
+          "authors": true,
+          "applyUsernameToAuthors": true,
+          "commitReferences": false,
+          "versionTitleDate": false
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        },
+        "build": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/lefthook/schema.json",
+  "pre-commit": {
+    "commands": {
+      "lint": {
+        "run": "bunx lint-staged --allow-empty"
+      }
+    }
+  },
+  "commit-msg": {
+    "commands": {
+      "lint-commit-message": {
+        "run": "bun commitlint --edit {1}"
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import type { CzTradeLicense } from '../types'
+import type { CzTradeLicense } from '@packages/general-codes/src/types'
 
 const czTradeLicenses = [
   // Řemeslné živnosti (Příloha č. 1)
