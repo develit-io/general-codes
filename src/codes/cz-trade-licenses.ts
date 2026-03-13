@@ -1,0 +1,612 @@
+import type { CzTradeLicense } from '../types'
+
+const czTradeLicenses = [
+  // Řemeslné živnosti (Příloha č. 1)
+  { code: 'R01', name: 'Řeznictví a uzenářství', type: 'řemeslná' },
+  { code: 'R02', name: 'Mlékárenství', type: 'řemeslná' },
+  { code: 'R03', name: 'Mlynářství', type: 'řemeslná' },
+  { code: 'R04', name: 'Pekařství, cukrářství', type: 'řemeslná' },
+  { code: 'R05', name: 'Pivovarnictví a sladovnictví', type: 'řemeslná' },
+  { code: 'R06', name: 'Zpracování kůží a kožešin', type: 'řemeslná' },
+  {
+    code: 'R07',
+    name: 'Aplikace, výroba a opravy ortopedické obuvi',
+    type: 'řemeslná',
+  },
+  { code: 'R08', name: 'Broušení a leptání skla', type: 'řemeslná' },
+  { code: 'R09', name: 'Zpracování gumárenských směsí', type: 'řemeslná' },
+  { code: 'R10', name: 'Zpracování kamene', type: 'řemeslná' },
+  { code: 'R11', name: 'Slévárenství, modelářství', type: 'řemeslná' },
+  { code: 'R12', name: 'Kovářství, podkovářství', type: 'řemeslná' },
+  { code: 'R13', name: 'Obráběčství', type: 'řemeslná' },
+  { code: 'R14', name: 'Zámečnictví, nástrojářství', type: 'řemeslná' },
+  { code: 'R15', name: 'Galvanizérství, smaltérství', type: 'řemeslná' },
+  {
+    code: 'R16',
+    name: 'Výroba, instalace, opravy elektrických strojů a přístrojů, elektronických a telekomunikačních zařízení',
+    type: 'řemeslná',
+  },
+  { code: 'R17', name: 'Hodinářství', type: 'řemeslná' },
+  { code: 'R18', name: 'Zlatnictví a klenotnictví', type: 'řemeslná' },
+  { code: 'R19', name: 'Truhlářství, podlahářství', type: 'řemeslná' },
+  { code: 'R20', name: 'Výroba a opravy hudebních nástrojů', type: 'řemeslná' },
+  {
+    code: 'R21',
+    name: 'Opravy ostatních dopravních prostředků a pracovních strojů',
+    type: 'řemeslná',
+  },
+  { code: 'R22', name: 'Zednictví', type: 'řemeslná' },
+  {
+    code: 'R23',
+    name: 'Montáž, opravy, revize a zkoušky elektrických zařízení',
+    type: 'řemeslná',
+  },
+  {
+    code: 'R24',
+    name: 'Montáž, opravy a rekonstrukce chladicích zařízení a tepelných čerpadel',
+    type: 'řemeslná',
+  },
+  { code: 'R25', name: 'Vodoinstalatérství, topenářství', type: 'řemeslná' },
+  {
+    code: 'R26',
+    name: 'Montáž, opravy, revize a zkoušky plynových zařízení a plnění nádob plyny',
+    type: 'řemeslná',
+  },
+  {
+    code: 'R27',
+    name: 'Montáž, opravy, revize a zkoušky tlakových zařízení a nádob na plyny',
+    type: 'řemeslná',
+  },
+  {
+    code: 'R28',
+    name: 'Montáž, opravy, revize a zkoušky zdvihacích zařízení',
+    type: 'řemeslná',
+  },
+  { code: 'R29', name: 'Izolatérství', type: 'řemeslná' },
+  {
+    code: 'R30',
+    name: 'Malířství, lakýrnictví, natěračství',
+    type: 'řemeslná',
+  },
+  { code: 'R31', name: 'Pokrývačství, tesařství', type: 'řemeslná' },
+  { code: 'R32', name: 'Klempířství a oprava karoserií', type: 'řemeslná' },
+  { code: 'R33', name: 'Kamnářství', type: 'řemeslná' },
+  { code: 'R34', name: 'Opravy silničních vozidel', type: 'řemeslná' },
+  { code: 'R35', name: 'Holičství, kadeřnictví', type: 'řemeslná' },
+  { code: 'R36', name: 'Barvení a chemická úprava textilií', type: 'řemeslná' },
+  { code: 'R37', name: 'Čištění a praní textilu a oděvů', type: 'řemeslná' },
+  { code: 'R38', name: 'Kominictví', type: 'řemeslná' },
+  { code: 'R39', name: 'Hostinská činnost', type: 'řemeslná' },
+  { code: 'R40', name: 'Kosmetické služby', type: 'řemeslná' },
+  { code: 'R41', name: 'Pedikúra, manikúra', type: 'řemeslná' },
+
+  // Vázané živnosti (Příloha č. 2)
+  { code: 'V01', name: 'Geologické práce', type: 'vázaná' },
+  {
+    code: 'V02',
+    name: 'Zpracování tabáku a výroba tabákových výrobků',
+    type: 'vázaná',
+  },
+  {
+    code: 'V03',
+    name: 'Výroba nebezpečných chemických látek a nebezpečných chemických přípravků a prodej chemických látek a chemických přípravků klasifikovaných jako vysoce toxické a toxické',
+    type: 'vázaná',
+  },
+  {
+    code: 'V04',
+    name: 'Výroba a opravy sériově zhotovovaných protéz, trupových ortéz, končetinových ortéz a měkkých bandáží',
+    type: 'vázaná',
+  },
+  { code: 'V05', name: 'Oční optika', type: 'vázaná' },
+  {
+    code: 'V06',
+    name: 'Podnikání v oblasti nakládání s nebezpečnými odpady',
+    type: 'vázaná',
+  },
+  { code: 'V07', name: 'Projektová činnost ve výstavbě', type: 'vázaná' },
+  {
+    code: 'V08',
+    name: 'Provádění staveb, jejich změn a odstraňování',
+    type: 'vázaná',
+  },
+  {
+    code: 'V09',
+    name: 'Nákup, prodej, ničení a zneškodňování pyrotechnických výrobků kategorie P2, T2 a F4 a provádění ohňostrojných prací',
+    type: 'vázaná',
+  },
+  {
+    code: 'V10',
+    name: 'Nákup a prodej kulturních památek nebo předmětů kulturní hodnoty',
+    type: 'vázaná',
+  },
+  {
+    code: 'V11',
+    name: 'Obchod se zvířaty určenými pro zájmové chovy',
+    type: 'vázaná',
+  },
+  {
+    code: 'V12',
+    name: 'Činnost účetních poradců, vedení účetnictví, vedení daňové evidence',
+    type: 'vázaná',
+  },
+  { code: 'V13', name: 'Realitní zprostředkování', type: 'vázaná' },
+  {
+    code: 'V14',
+    name: 'Činnost samostatných likvidátorů pojistných událostí',
+    type: 'vázaná',
+  },
+  {
+    code: 'V15',
+    name: 'Provádění veřejných dražeb s výjimkou dražeb nucených',
+    type: 'vázaná',
+  },
+  { code: 'V16', name: 'Oceňování majetku', type: 'vázaná' },
+  { code: 'V17', name: 'Výkon zeměměřických činností', type: 'vázaná' },
+  {
+    code: 'V18',
+    name: 'Revize, prohlídky a zkoušky určených technických zařízení v provozu',
+    type: 'vázaná',
+  },
+  {
+    code: 'V19',
+    name: 'Restaurování děl z oboru výtvarných umění',
+    type: 'vázaná',
+  },
+  {
+    code: 'V20',
+    name: 'Speciální ochranná dezinfekce, dezinsekce a deratizace',
+    type: 'vázaná',
+  },
+  { code: 'V21', name: 'Průvodcovská činnost horská', type: 'vázaná' },
+  { code: 'V22', name: 'Vodní záchranářská služba', type: 'vázaná' },
+  {
+    code: 'V23',
+    name: 'Technicko-organizační činnost v oblasti požární ochrany',
+    type: 'vázaná',
+  },
+  {
+    code: 'V24',
+    name: 'Poskytování služeb v oblasti bezpečnosti a ochrany zdraví při práci',
+    type: 'vázaná',
+  },
+  {
+    code: 'V25',
+    name: 'Poskytování tělovýchovných a sportovních služeb',
+    type: 'vázaná',
+  },
+  { code: 'V26', name: 'Provozování autoškoly', type: 'vázaná' },
+  {
+    code: 'V27',
+    name: 'Pořádání kurzů k získání znalostí k výkonu speciální ochranné dezinfekce, dezinsekce a deratizace',
+    type: 'vázaná',
+  },
+  {
+    code: 'V28',
+    name: 'Péče o dítě do tří let věku v denním režimu',
+    type: 'vázaná',
+  },
+  {
+    code: 'V29',
+    name: 'Psychologické poradenství a diagnostika',
+    type: 'vázaná',
+  },
+  { code: 'V30', name: 'Drezúra zvířat', type: 'vázaná' },
+  {
+    code: 'V31',
+    name: 'Činnosti, při kterých je porušována integrita lidské kůže',
+    type: 'vázaná',
+  },
+  {
+    code: 'V32',
+    name: 'Masérské, rekondiční a regenerační služby',
+    type: 'vázaná',
+  },
+  { code: 'V33', name: 'Provozování solárií', type: 'vázaná' },
+
+  // Koncesované živnosti (Příloha č. 3)
+  {
+    code: 'K01',
+    name: 'Výroba a úprava kvasného lihu, konzumního lihu, lihovin a ostatních alkoholických nápojů a prodej kvasného lihu, konzumního lihu a lihovin',
+    type: 'koncesovaná',
+  },
+  {
+    code: 'K02',
+    name: 'Výroba a úprava lihu sulfitového nebo lihu syntetického',
+    type: 'koncesovaná',
+  },
+  {
+    code: 'K03',
+    name: 'Výzkum, vývoj, výroba, ničení, nákup, prodej a skladování výbušnin a munice, zpracování a zneškodňování výbušnin, znehodnocování a delaborace munice a provádění trhacích prací',
+    type: 'koncesovaná',
+  },
+  {
+    code: 'K04',
+    name: 'Vývoj, výroba, opravy, úpravy, přeprava, nákup, prodej, půjčování, uschovávání, znehodnocování a ničení zbraní a střeliva',
+    type: 'koncesovaná',
+  },
+  {
+    code: 'K05',
+    name: 'Nákup a prodej, půjčování, vývoj, výroba, opravy, úpravy, uschovávání, skladování, přeprava, znehodnocování a ničení bezpečnostního materiálu',
+    type: 'koncesovaná',
+  },
+  {
+    code: 'K06',
+    name: 'Výroba a zpracování paliv a maziv a distribuce pohonných hmot',
+    type: 'koncesovaná',
+  },
+  {
+    code: 'K07',
+    name: 'Výroba tepelné energie a rozvod tepelné energie, nepodléhající licenci realizovaná ze zdrojů tepelné energie s instalovaným výkonem jednoho zdroje nad 50 kW',
+    type: 'koncesovaná',
+  },
+  { code: 'K08', name: 'Silniční motorová doprava', type: 'koncesovaná' },
+  { code: 'K09', name: 'Vnitrozemská vodní doprava', type: 'koncesovaná' },
+  {
+    code: 'K10',
+    name: 'Kontrolní testování profesionálních zařízení pro aplikaci přípravků',
+    type: 'koncesovaná',
+  },
+  {
+    code: 'K11',
+    name: 'Provádění pyrotechnického průzkumu',
+    type: 'koncesovaná',
+  },
+  { code: 'K12', name: 'Provádění nucených dražeb', type: 'koncesovaná' },
+  { code: 'K13', name: 'Provozování cestovní kanceláře', type: 'koncesovaná' },
+  { code: 'K14', name: 'Ostraha majetku a osob', type: 'koncesovaná' },
+  { code: 'K15', name: 'Služby soukromých detektivů', type: 'koncesovaná' },
+  {
+    code: 'K16',
+    name: 'Poskytování technických služeb k ochraně majetku a osob',
+    type: 'koncesovaná',
+  },
+  { code: 'K17', name: 'Vedení spisovny', type: 'koncesovaná' },
+  {
+    code: 'K18',
+    name: 'Provozování střelnic a výuka a výcvik ve střelbě se zbraní',
+    type: 'koncesovaná',
+  },
+  { code: 'K19', name: 'Provozování pohřební služby', type: 'koncesovaná' },
+  {
+    code: 'K20',
+    name: 'Provádění balzamace a konzervace',
+    type: 'koncesovaná',
+  },
+  { code: 'K21', name: 'Provozování krematoria', type: 'koncesovaná' },
+
+  // Obory činností živnosti volné (Příloha č. 4/6)
+  {
+    code: 'D01',
+    name: 'Poskytování služeb pro zemědělství, zahradnictví, rybníkářství, lesnictví a myslivost',
+    type: 'volná',
+  },
+  {
+    code: 'D02',
+    name: 'Činnost odborného lesního hospodáře a vyhotovování lesních hospodářských plánů a osnov',
+    type: 'volná',
+  },
+  {
+    code: 'D03',
+    name: 'Diagnostická, zkušební a poradenská činnost v ochraně rostlin',
+    type: 'volná',
+  },
+  {
+    code: 'D04',
+    name: 'Nakládání s reprodukčním materiálem lesních dřevin',
+    type: 'volná',
+  },
+  {
+    code: 'D05',
+    name: 'Chov zvířat a jejich výcvik (s výjimkou živočišné výroby)',
+    type: 'volná',
+  },
+  {
+    code: 'D06',
+    name: 'Úprava nerostů, dobývání rašeliny a bahna',
+    type: 'volná',
+  },
+  {
+    code: 'D07',
+    name: 'Výroba potravinářských a škrobárenských výrobků',
+    type: 'volná',
+  },
+  { code: 'D08', name: 'Pěstitelské pálení', type: 'volná' },
+  {
+    code: 'D09',
+    name: 'Výroba krmiv, krmných směsí, doplňkových látek a premixů',
+    type: 'volná',
+  },
+  {
+    code: 'D10',
+    name: 'Výroba textilií, textilních výrobků, oděvů a oděvních doplňků',
+    type: 'volná',
+  },
+  {
+    code: 'D11',
+    name: 'Výroba a opravy obuvi, brašnářského a sedlářského zboží',
+    type: 'volná',
+  },
+  {
+    code: 'D12',
+    name: 'Zpracování dřeva, výroba dřevěných, korkových, proutěných a slaměných výrobků',
+    type: 'volná',
+  },
+  {
+    code: 'D13',
+    name: 'Výroba vlákniny, papíru a lepenky a zboží z těchto materiálů',
+    type: 'volná',
+  },
+  {
+    code: 'D14',
+    name: 'Vydavatelské činnosti, polygrafická výroba, knihařské a kopírovací práce',
+    type: 'volná',
+  },
+  {
+    code: 'D15',
+    name: 'Výroba, rozmnožování, distribuce, prodej, pronájem zvukových a zvukově-obrazových záznamů',
+    type: 'volná',
+  },
+  {
+    code: 'D16',
+    name: 'Výroba koksu, surového dehtu a jiných pevných paliv',
+    type: 'volná',
+  },
+  {
+    code: 'D17',
+    name: 'Výroba chemických látek a chemických směsí nebo předmětů a kosmetických přípravků',
+    type: 'volná',
+  },
+  { code: 'D18', name: 'Výroba hnojiv', type: 'volná' },
+  { code: 'D19', name: 'Výroba plastových a pryžových výrobků', type: 'volná' },
+  { code: 'D20', name: 'Výroba a zpracování skla', type: 'volná' },
+  {
+    code: 'D21',
+    name: 'Výroba stavebních hmot, porcelánových, keramických a sádrových výrobků',
+    type: 'volná',
+  },
+  {
+    code: 'D22',
+    name: 'Výroba brusiv a ostatních minerálních nekovových výrobků',
+    type: 'volná',
+  },
+  {
+    code: 'D23',
+    name: 'Broušení technického a šperkového kamene',
+    type: 'volná',
+  },
+  {
+    code: 'D24',
+    name: 'Výroba a hutní zpracování železa, drahých a neželezných kovů a jejich slitin',
+    type: 'volná',
+  },
+  {
+    code: 'D25',
+    name: 'Výroba kovových konstrukcí a kovodělných výrobků',
+    type: 'volná',
+  },
+  { code: 'D26', name: 'Umělecko-řemeslné zpracování kovů', type: 'volná' },
+  {
+    code: 'D27',
+    name: 'Povrchové úpravy a svařování kovů a dalších materiálů',
+    type: 'volná',
+  },
+  {
+    code: 'D28',
+    name: 'Výroba měřicích, zkušebních, navigačních, optických a fotografických přístrojů a zařízení',
+    type: 'volná',
+  },
+  {
+    code: 'D29',
+    name: 'Výroba elektronických součástek, elektrických zařízení a výroba a opravy elektrických strojů',
+    type: 'volná',
+  },
+  {
+    code: 'D30',
+    name: 'Výroba neelektrických zařízení pro domácnost',
+    type: 'volná',
+  },
+  { code: 'D31', name: 'Výroba strojů a zařízení', type: 'volná' },
+  {
+    code: 'D32',
+    name: 'Výroba motorových a přípojných vozidel a karoserií',
+    type: 'volná',
+  },
+  { code: 'D33', name: 'Stavba a výroba plavidel', type: 'volná' },
+  {
+    code: 'D34',
+    name: 'Výroba, vývoj, projektování, zkoušky, instalace, údržba, opravy letadel a leteckých zařízení',
+    type: 'volná',
+  },
+  {
+    code: 'D35',
+    name: 'Výroba drážních hnacích vozidel a drážních vozidel',
+    type: 'volná',
+  },
+  {
+    code: 'D36',
+    name: 'Výroba jízdních kol, vozíků pro invalidy a jiných nemotorových dopravních prostředků',
+    type: 'volná',
+  },
+  { code: 'D37', name: 'Výroba a opravy čalounických výrobků', type: 'volná' },
+  {
+    code: 'D38',
+    name: 'Výroba, opravy a údržba sportovních potřeb, her, hraček a dětských kočárků',
+    type: 'volná',
+  },
+  { code: 'D39', name: 'Výroba zdravotnických prostředků', type: 'volná' },
+  {
+    code: 'D40',
+    name: 'Výroba a opravy zdrojů ionizujícího záření',
+    type: 'volná',
+  },
+  {
+    code: 'D41',
+    name: 'Výroba školních a kancelářských potřeb, bižuterie, kartáčnického a konfekčního zboží',
+    type: 'volná',
+  },
+  {
+    code: 'D42',
+    name: 'Výroba dalších výrobků zpracovatelského průmyslu',
+    type: 'volná',
+  },
+  {
+    code: 'D43',
+    name: 'Provozování vodovodů a kanalizací a úprava a rozvod vody',
+    type: 'volná',
+  },
+  {
+    code: 'D44',
+    name: 'Nakládání s odpady (vyjma nebezpečných)',
+    type: 'volná',
+  },
+  {
+    code: 'D45',
+    name: 'Přípravné a dokončovací stavební práce, specializované stavební činnosti',
+    type: 'volná',
+  },
+  {
+    code: 'D46',
+    name: 'Sklenářské práce, rámování a paspartování',
+    type: 'volná',
+  },
+  { code: 'D47', name: 'Zprostředkování obchodu a služeb', type: 'volná' },
+  { code: 'D48', name: 'Velkoobchod a maloobchod', type: 'volná' },
+  {
+    code: 'D49',
+    name: 'Zastavárenská činnost a maloobchod s použitým zbožím',
+    type: 'volná',
+  },
+  {
+    code: 'D50',
+    name: 'Údržba motorových vozidel a jejich příslušenství',
+    type: 'volná',
+  },
+  {
+    code: 'D51',
+    name: 'Potrubní a pozemní doprava (vyjma železniční a silniční motorové dopravy)',
+    type: 'volná',
+  },
+  {
+    code: 'D52',
+    name: 'Skladování, balení zboží, manipulace s nákladem a technické činnosti v dopravě',
+    type: 'volná',
+  },
+  {
+    code: 'D53',
+    name: 'Zasilatelství a zastupování v celním řízení',
+    type: 'volná',
+  },
+  { code: 'D55', name: 'Ubytovací služby', type: 'volná' },
+  {
+    code: 'D56',
+    name: 'Poskytování software, poradenství v oblasti informačních technologií, zpracování dat',
+    type: 'volná',
+  },
+  {
+    code: 'D57',
+    name: 'Činnost informačních a zpravodajských kanceláří',
+    type: 'volná',
+  },
+  {
+    code: 'D58',
+    name: 'Nákup, prodej, správa a údržba nemovitostí',
+    type: 'volná',
+  },
+  { code: 'D59', name: 'Pronájem a půjčování věcí movitých', type: 'volná' },
+  {
+    code: 'D60',
+    name: 'Poradenská a konzultační činnost, zpracování odborných studií a posudků',
+    type: 'volná',
+  },
+  { code: 'D61', name: 'Projektování pozemkových úprav', type: 'volná' },
+  {
+    code: 'D62',
+    name: 'Příprava a vypracování technických návrhů, grafické a kresličské práce',
+    type: 'volná',
+  },
+  { code: 'D63', name: 'Projektování elektrických zařízení', type: 'volná' },
+  {
+    code: 'D64',
+    name: 'Výzkum a vývoj v oblasti přírodních a technických věd',
+    type: 'volná',
+  },
+  { code: 'D65', name: 'Testování, měření, analýzy a kontroly', type: 'volná' },
+  {
+    code: 'D66',
+    name: 'Reklamní činnost, marketing, mediální zastoupení',
+    type: 'volná',
+  },
+  {
+    code: 'D67',
+    name: 'Návrhářská, designérská, aranžérská činnost a modeling',
+    type: 'volná',
+  },
+  { code: 'D68', name: 'Fotografické služby', type: 'volná' },
+  { code: 'D69', name: 'Překladatelská a tlumočnická činnost', type: 'volná' },
+  {
+    code: 'D70',
+    name: 'Služby v oblasti administrativní správy a služby organizačně hospodářské povahy',
+    type: 'volná',
+  },
+  {
+    code: 'D71',
+    name: 'Provozování cestovní agentury a průvodcovská činnost',
+    type: 'volná',
+  },
+  {
+    code: 'D72',
+    name: 'Mimoškolní výchova a vzdělávání, pořádání kurzů, školení',
+    type: 'volná',
+  },
+  {
+    code: 'D73',
+    name: 'Provozování kulturních, kulturně-vzdělávacích a zábavních zařízení',
+    type: 'volná',
+  },
+  {
+    code: 'D74',
+    name: 'Provozování tělovýchovných a sportovních zařízení a organizování sportovní činnosti',
+    type: 'volná',
+  },
+  {
+    code: 'D75',
+    name: 'Praní pro domácnost, žehlení, opravy a údržba oděvů',
+    type: 'volná',
+  },
+  { code: 'D76', name: 'Poskytování technických služeb', type: 'volná' },
+  {
+    code: 'D77',
+    name: 'Opravy a údržba potřeb pro domácnost, předmětů kulturní povahy',
+    type: 'volná',
+  },
+  {
+    code: 'D78',
+    name: 'Poskytování služeb osobního charakteru a pro osobní hygienu',
+    type: 'volná',
+  },
+  {
+    code: 'D79',
+    name: 'Poskytování služeb pro rodinu a domácnost',
+    type: 'volná',
+  },
+  {
+    code: 'D80',
+    name: 'Poskytování služeb pro právnické osoby a svěřenecké fondy',
+    type: 'volná',
+  },
+  {
+    code: 'D81',
+    name: 'Poskytování služeb spojených s virtuálním aktivem',
+    type: 'volná',
+  },
+  {
+    code: 'D82',
+    name: 'Výroba, obchod a služby jinde nezařazené',
+    type: 'volná',
+  },
+] as const satisfies readonly CzTradeLicense[]
+
+export default czTradeLicenses
+
+export type CzTradeLicenseCode = (typeof czTradeLicenses)[number]['code']
+export type CzTradeLicenseType = (typeof czTradeLicenses)[number]['type']

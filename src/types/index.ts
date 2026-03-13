@@ -52,6 +52,18 @@ export interface Bank {
   bicCor?: string
 }
 
+export type CzNace = {
+  code: string
+  section: string
+  name: string
+}
+
+export type CzTradeLicense = {
+  code: string
+  name: string
+  type: 'řemeslná' | 'vázaná' | 'koncesovaná' | 'volná'
+}
+
 export type { BankCode } from '../codes/banks'
 export type {
   CountryCode2,
@@ -63,6 +75,11 @@ export type {
 export type { CryptoNetworkCode } from '../codes/crypto-networks'
 export type { CurrencyCode, CurrencyType } from '../codes/currencies'
 export type { CurrencyProviderId } from '../codes/currency-providers'
+export type { CzNaceCode, CzNaceSection } from '../codes/cz-nace'
+export type {
+  CzTradeLicenseCode,
+  CzTradeLicenseType,
+} from '../codes/cz-trade-licenses'
 export type {
   KrakenPairCode,
   KrakenPairKey,

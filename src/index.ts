@@ -3,6 +3,8 @@ export { default as COUNTRIES } from './codes/countries'
 export { default as CRYPTO_NETWORKS } from './codes/crypto-networks'
 export { default as CURRENCIES } from './codes/currencies'
 export { default as CURRENCY_PROVIDERS } from './codes/currency-providers'
+export { default as CZ_NACE } from './codes/cz-nace'
+export { default as CZ_TRADE_LICENSES } from './codes/cz-trade-licenses'
 export { default as KRAKEN_CRYPTO_FIAT_PAIRS } from './codes/kraken-crypto-fiat-pairs'
 export { default as LANGUAGES } from './codes/languages'
 
@@ -11,6 +13,8 @@ import COUNTRIES from './codes/countries'
 import CRYPTO_NETWORKS from './codes/crypto-networks'
 import CURRENCIES from './codes/currencies'
 import CURRENCY_PROVIDERS from './codes/currency-providers'
+import CZ_NACE from './codes/cz-nace'
+import CZ_TRADE_LICENSES from './codes/cz-trade-licenses'
 import LANGUAGES from './codes/languages'
 import * as CODES from './types'
 
@@ -55,6 +59,15 @@ export const CURRENCY_PROVIDER_IDS = [
 export const CRYPTO_NETWORK_CODES = [
   ...CRYPTO_NETWORKS.map((network) => network.code),
 ] as const
+
+export const CZ_NACE_CODES = [...CZ_NACE.map((n) => n.code)] as const as [
+  CODES.CzNaceCode,
+  ...CODES.CzNaceCode[],
+]
+
+export const CZ_TRADE_LICENSE_CODES = [
+  ...CZ_TRADE_LICENSES.map((t) => t.code),
+] as const as [CODES.CzTradeLicenseCode, ...CODES.CzTradeLicenseCode[]]
 
 // Export currency type constants
 export const CURRENCY_TYPES = ['FIAT', 'CRYPTO'] as const
