@@ -25,8 +25,9 @@ jobs:
       - name: Install NPM dependencies
         run: bun install
 
-      - name: Build package
+      - name: Build General Codes package
         run: bun build:codes
 
-      - name: Release Assurance SDK
+      - name: Release General Codes
         run: npm publish --access public
+        working-directory: ./packages/general-codes
