@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.17.0
+
+[compare changes](https://undefined/undefined/compare/v1.16.1...v1.17.0)
+
+### 🚀 Enhancements
+
+- **codes:** Add CZ NACE and trade licenses data structures (d135db9)
+
+### ❤️ Contributors
+
+- Klein Petr ([@kleinpetr](https://github.com/kleinpetr))
+
 ## v1.16.1
 
 [compare changes](https://undefined/undefined/compare/v1.16.0...v1.16.1)
