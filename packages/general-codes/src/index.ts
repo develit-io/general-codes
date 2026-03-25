@@ -117,4 +117,5 @@ export {
   searchCurrencies,
   searchNetworks,
   validateCurrencyNetworkPair,
+  validateIbanChecksum,
 } from './utils'

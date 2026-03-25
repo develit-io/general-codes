@@ -194,6 +194,26 @@ export const normalizeAmount = (
 }
 
 /**
+ * Validates the checksum of an IBAN using the ISO 13616 mod-97 algorithm.
+ * Returns true if the IBAN has a valid checksum, false otherwise.
+ */
+export const validateIbanChecksum = (iban: string): boolean => {
+  try {
+    const rearranged = iban.slice(4) + iban.slice(0, 4)
+    const numeric = rearranged.replace(/[A-Z]/g, (c) =>
+      String(c.charCodeAt(0) - 55),
+    )
+    let remainder = 0n
+    for (const char of numeric) {
+      remainder = (remainder * 10n + BigInt(char)) % 97n
+    }
+    return remainder === 1n
+  } catch {
+    return false
+  }
+}
+
+/**
  * Returns the Kraken-specific pair code for a given standard pair.
  * For example, input "BTCEUR" will return "XXBTZEUR".
  */
