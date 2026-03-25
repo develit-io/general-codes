@@ -1,3 +1,13 @@
+## 1.19.1
+
+### 🚀 Features
+
+- **general-codes:** add IBAN checksum validation utility
+
+### ❤️ Thank You
+
+- Klein Petr @kleinpetr
+
 ## 1.19.0
 
 ### 💅 Refactors
