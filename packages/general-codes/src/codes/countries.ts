@@ -729,6 +729,15 @@ const countries = [
     vat: 10,
     sanctions: true,
   },
+	{
+		code2: "HK",
+		code3: "HKG",
+		currency: "HKD",
+		phoneCode: "+852",
+		name: "Hong Kong",
+		native: "香港",
+		vat: 0,
+	},
   {
     code2: 'HN',
     code3: 'HND',
