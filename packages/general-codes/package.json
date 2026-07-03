@@ -4,6 +4,10 @@
   "description": "General Codes",
   "author": "Develit.io",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develit-io/general-codes.git"
+  },
   "type": "module",
   "scripts": {
     "build": "unbuild",
