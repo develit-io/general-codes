@@ -1,3 +1,15 @@
+## 1.19.3
+
+### 🚀 Features
+
+- **countries:** add getCountryByCode for alpha-2 and alpha-3 lookup
+- **release:** dual-publish to GH Packages + repository field
+
+### ❤️ Thank You
+
+- Daniel Klein
+- DomWane
+
 ## 1.19.2
 
 ### 🚀 Features
