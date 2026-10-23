@@ -95,6 +95,7 @@ export {
   findFromKrakenPair,
   findToKrakenPair,
   formatCurrency,
+  getCountryByCode,
   getCryptoCurrencies,
   getCurrenciesByNetwork,
   getCurrenciesByProvider,

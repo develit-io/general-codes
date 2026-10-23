@@ -1,3 +1,4 @@
+import COUNTRIES from '@packages/general-codes/src/codes/countries'
 import CRYPTO_NETWORKS from '@packages/general-codes/src/codes/crypto-networks'
 import CURRENCIES from '@packages/general-codes/src/codes/currencies'
 import KRAKEN_PAIR_LIST, {
@@ -6,6 +7,7 @@ import KRAKEN_PAIR_LIST, {
   type KrakenPairs,
 } from '@packages/general-codes/src/codes/kraken-crypto-fiat-pairs'
 import type {
+  Country,
   CryptoNetwork,
   Currency,
   CurrencyType,
@@ -41,6 +43,12 @@ export const isFiatCurrency = (code: string): boolean => {
 export const isCryptoCurrency = (code: string): boolean => {
   const currency = getCurrencyByCode(code)
   return currency?.type === 'CRYPTO'
+}
+
+export const getCountryByCode = (code: string): Country | undefined => {
+  return COUNTRIES.find(
+    (country) => country.code2 === code || country.code3 === code,
+  )
 }
 
 // Network helper functions
